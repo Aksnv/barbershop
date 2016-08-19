@@ -2,6 +2,26 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: PTSans;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-image: url(../images/main_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-color: #070707;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 
