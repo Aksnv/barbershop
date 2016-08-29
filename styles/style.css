@@ -45,6 +45,10 @@ a {
   color: #ffffff;
 }
 
+.link {
+  text-decoration: underline;
+}
+
 p {
   line-height: 24px;
 }
@@ -328,4 +332,60 @@ input[type="submit"] {
 
 .page-footer__block {
   float: left;
+  min-width: 144px;
+  margin-top: 43px;
+  margin-left: 11px;
+  margin-right: 87px;
+  text-align: center;
+}
+
+.page-footer__block:first-child {
+  text-align: left;
+}
+
+.page-footer__block:last-child {
+  float: right;
+  margin-right: 5px;
+}
+
+.button--sm {
+  float: left;
+  width: 43px;
+  height: 43px;
+  margin-right: 5px;
+  background-image: url(../images/sprite.png);
+  color: transparent;
+}
+
+.button--sm:hover {
+  background-color: #ffffff;
+}
+
+.button__vk {
+  background-position: 8px -186px;
+}
+
+.button__fb {
+  background-position: 16px -51px;
+}
+
+.button__ig {
+  background-position: 11px -124px;
+}
+
+.button__vk:hover {
+  background-position: 8px -157px;
+}
+
+.button__fb:hover {
+  background-position: 16px -18px;
+}
+
+.button__ig:hover {
+  background-position: 11px -89px;
+}
+
+.button--developers:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
