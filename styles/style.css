@@ -113,6 +113,46 @@ a {
 
 /* -------------  ------------- Main content -------------  ------------- */
 
+.main-content__logo {
+  width: 355px;
+  margin: 0 auto;
+  margin-top: 57px;
+  margin-bottom: 18px;
+}
+
+.main-content__promo {
+  overflow: hidden;
+}
+
+.main-content__promo-block {
+  position: relative;
+  float: left;
+  width: 284px;
+  margin: 0 18px;
+  text-align: center;
+}
+
+.main-content__promo-block strong {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 57px;
+}
+
+.main-content__promo-block::after {
+  position: absolute;
+  top: 59px;
+  left: 133px;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.main-content__promo-block p {
+  line-height: 24px;
+}
 
 
 /* -------------  ------------- Footer -------------  ------------- */
