@@ -1,2 +1,2 @@
 #barbershop
-¬ерстка учебного макета Barbershop от HTMLAcademy (фиксированна€)
+Barbershop from HTMLAcademy (fixed)

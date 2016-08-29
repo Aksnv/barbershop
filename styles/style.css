@@ -1,8 +1,18 @@
 /* -------------  ------------- All styles -------------  ------------- */
+
+@font-face {
+  font-family: "PTSans NarrowBold";
+  src: url(../fonts/web/ptsansnarrowbold.woff);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: PTSans;
+  font-family: "PTSans NarrowBold", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -21,12 +31,88 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 /* -------------  ------------- Header -------------  ------------- */
+
+.page-header {
+  height: 72px;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+.page-header__block-left {
+  float: left;
+  padding-left: 9px;
+}
+
+.page-header__block-right {
+  float: right;
+  padding-right: 10px;
+}
+
+.main-menu__item {
+  float: left;
+}
+
+.main-menu__item a, 
+.login__item {
+  display: block;
+  line-height: 72px;
+}
+
+.main-menu__item a {
+  padding-right: 22px;
+  padding-left: 21px;
+}
+
+.login {
+  position: relative;
+}
+
+.login__item {
+  padding-right: 20px;
+  padding-left: 53px;
+}
+
+.login__item::before {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 16px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.2;
+}
+
+.login__item:hover::before {
+  opacity: 1;
+}
+
+.main-menu__item:hover, 
+.login__item:hover {
+  background-color: #242424;
+}
+
+.main-menu__item-active a::after {
+  content: '';
+  display: block;
+  height: 4px;
+  margin-top: -4px;
+  background-color: #ffffff;
+}
+
 
 
 
@@ -36,3 +122,7 @@ ul {
 
 /* -------------  ------------- Footer -------------  ------------- */
 
+.page-footer {
+  height: 190px;
+  background-color: #202020;
+}
