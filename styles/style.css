@@ -49,12 +49,29 @@ p {
   line-height: 24px;
 }
 
-button {
+input {
+  width: 140px;
+  height: 43px;
+  border: 2px solid #000000;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #663d15;
+}
+
+button,
+input[type="submit"] {
   border: none;
   font-family: "PTSans NarrowBold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+button:focus,
+input[type="submit"] {
+  outline: none;
 }
 
 .button {
@@ -248,14 +265,57 @@ button {
   border: 7px solid #ffffff;
 }
 
-.button-gallery {
+.button--gallery,
+.button--contacts {
   float: left;
-  margin-left: -3px;
   margin-right: 23px;
 }
 
-.button-gallery:last-child {
+.button--gallery {
+  margin-left: -3px;
+}
+
+.button--contacts {
+  margin-left: -1px;
+}
+
+.button--gallery:last-child,
+.button--contacts:last-child {
   margin-right: 0;
+}
+
+.main-content__information-contacts p {
+  margin-bottom: 24px;
+}
+
+.main-content__information-contacts p:last-of-type {
+  margin-bottom: 46px;
+}
+
+.main-content__information-form p {
+  padding-right: 30px;
+  margin-bottom: 26px;
+}
+
+.main-content__information-form input {
+  margin-left: -4px;
+  margin-bottom: 20px;
+}
+
+.main-content__information-form input:nth-of-type(odd) {
+  margin-right: 23px;
+}
+
+.main-content__information-form input[placeholder] {
+  padding-left: 14px;
+  font-family: "PTSans NarrowBold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button--submit {
+  width: 301px;
+  margin-top: 12px;
 }
 
 
