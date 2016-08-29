@@ -1,6 +1,11 @@
 /* -------------  ------------- All styles -------------  ------------- */
 
 @font-face {
+  font-family: "PTSans Narrow";
+  src: url(../fonts/web/ptsansnarrow.woff);
+}
+
+@font-face {
   font-family: "PTSans NarrowBold";
   src: url(../fonts/web/ptsansnarrowbold.woff);
 }
@@ -38,6 +43,35 @@ ul {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+p {
+  line-height: 24px;
+}
+
+button {
+  border: none;
+  font-family: "PTSans NarrowBold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button {
+  display: block;
+  width: 140px;
+  height: 43px;
+  border-left: 1px solid #100f0f;
+  border-right: 1px solid #100f0f;
+  text-align: center;
+  line-height: 43px;
+  background-color: #000000;
+}
+
+.button:hover {
+  background-color: #663d15;
+  border-left: 1px solid #6f4923;
+  border-right: 1px solid #6f4923;
 }
 
 /* -------------  ------------- Header -------------  ------------- */
@@ -151,7 +185,77 @@ a {
 }
 
 .main-content__promo-block p {
-  line-height: 24px;
+  margin-bottom: 78px;
+}
+
+.main-content__information {
+  width: 940px;
+  min-height: 430px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  background-image: url(../images/vertical-line_bg.png), url(../images/info_bg.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-color: #f8f5f2;
+  color: #000000;
+}
+
+.main-content__information:last-child {
+  margin-bottom: 63px;
+}
+
+.main-content__information h3 {
+  font-size: 30px;
+  padding-top: 17px;
+  margin-bottom: 25px;
+}
+
+.main-content__information--left {
+  float: left;
+  width: 325px;
+  margin-left: 82px;
+}
+
+.main-content__information--right {
+  float: right;
+  width: 325px;
+  margin-right: 50px;
+}
+
+.main-content__information-news time {
+  font-family: "PTSans Narrow", sans-serif;
+  text-transform: none;
+}
+
+.main-content__information-news p {
+  margin-top: 30px;
+  margin-bottom: 3px;
+  padding-right: 25px;
+}
+
+.main-content__information-news p:first-child {
+  margin-top: 26px;
+}
+
+.button--news {
+  margin-top: 34px;
+}
+
+.main-content__information-gallery img {
+  margin-top: 7px;
+  margin-left: -4px;
+  margin-bottom: 33px;
+  border: 7px solid #ffffff;
+}
+
+.button-gallery {
+  float: left;
+  margin-left: -3px;
+  margin-right: 23px;
+}
+
+.button-gallery:last-child {
+  margin-right: 0;
 }
 
 
@@ -160,4 +264,8 @@ a {
 .page-footer {
   height: 190px;
   background-color: #202020;
+}
+
+.page-footer__block {
+  float: left;
 }
