@@ -48,13 +48,14 @@ a {
   background-color: #000000;
 }
 
-.page-header__block-left {
+.main-menu {
   float: left;
   padding-left: 9px;
 }
 
-.page-header__block-right {
+.login {
   float: right;
+  position: relative;
   padding-right: 10px;
 }
 
@@ -71,10 +72,6 @@ a {
 .main-menu__item a {
   padding-right: 22px;
   padding-left: 21px;
-}
-
-.login {
-  position: relative;
 }
 
 .login__item {
@@ -112,8 +109,6 @@ a {
   margin-top: -4px;
   background-color: #ffffff;
 }
-
-
 
 
 /* -------------  ------------- Main content -------------  ------------- */

@@ -1,2 +1,2 @@
 #barbershop
-Barbershop from HTMLAcademy (fixed)
+Barbershop layout from HTMLAcademy (fixed)
