@@ -39,17 +39,53 @@
         <div class="shop-filters">
           <form>
             <h3>Производители:</h3>
-            <input id="baxter" type="checkbox" name="baxter"><label for="baxter">Baxter of California</label>
-            <input id="natty" type="checkbox" name="natty"><label for="natty">Mr Natty</label>
-            <input id="suavecito" type="checkbox" name="suavecito"><label for="suavecito">Suavecito</label>
-            <input id="malin" type="checkbox" name="malin"><label for="malin">Malin+Goetz</label>
-            <input id="murray" type="checkbox" name="murray"><label for="murray">Murray's</label>
-            <input id="crew" type="checkbox" name="crew"><label for="crew">American Crew</label>
+            <label class="shop-filters__manufacturer">
+              <input type="checkbox" name="baxter">
+              <span class="checkbox-indicator"></span>
+              <span>Baxter of California</span>
+            </label>
+            <label class="shop-filters__manufacturer">
+              <input type="checkbox" name="natty" disabled>
+              <span class="checkbox-indicator"></span>
+              <span>Mr Natty</span>
+            </label>
+            <label class="shop-filters__manufacturer">
+              <input type="checkbox" name="suavecito">
+              <span class="checkbox-indicator"></span>
+              <span>Suavecito</span>
+            </label>
+            <label class="shop-filters__manufacturer">
+              <input type="checkbox" name="malin" disabled>
+              <span class="checkbox-indicator"></span>
+              <span>Malin+Goetz</span>
+            </label>
+            <label class="shop-filters__manufacturer">
+              <input type="checkbox" name="murray" disabled>
+              <span class="checkbox-indicator"></span>
+              <span>Murray's</span>
+            </label>
+            <label class="shop-filters__manufacturer">
+              <input type="checkbox" name="crew">
+              <span class="checkbox-indicator"></span>
+              <span>American Crew</span>
+            </label>
             <h3>Группы товаров:</h3>
-            <input id="razor" type="radio" name="razor"><label for="razor">Бритвенные принадлежности</label>
-            <input id="care" type="radio" name="care"><label for="care">Средства для ухода</label>
-            <input id="accessories" type="radio" name="accessories"><label for="accessories">Аксессуары</label>
-            <button class="button">Показать</button>
+            <label class="shop-filters__product-group">
+              <input type="radio" name="item">
+              <span class="radio-indicator"></span>
+              <span>Бритвенные принадлежности</span>
+            </label>
+            <label class="shop-filters__product-group">
+              <input type="radio" name="item">
+              <span class="radio-indicator"></span>
+              <span>Средства для ухода</span>
+            </label>
+            <label class="shop-filters__product-group">
+              <input type="radio" name="item">
+              <span class="radio-indicator"></span>
+              <span>Аксессуары</span>
+            </label>
+            <button class="button button--view">Показать</button>
           </form>
         </div>
         <div class="shop-products">
