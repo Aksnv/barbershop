@@ -1,0 +1,92 @@
+/* -------------  ------------- All styles -------------  ------------- */
+
+body {
+  background-image: url(../../images/info_bg.jpg);
+  background-repeat: repeat;
+  background-color: #f8f5f2;
+}
+
+
+/* -------------  ------------- Header -------------  ------------- */
+
+
+/* -------------  ------------- Main content -------------  ------------- */
+
+.main-content,
+.main-content a {
+  color: #000000;
+}
+
+.main-content__header,
+.main-content__breadcrumbs,
+.main-content__shop {
+  margin-left: 11px;
+}
+
+.main-content__shop {
+  overflow: hidden;
+}
+
+.main-content__header {
+  margin-top: 53px;
+}
+
+.main-content__header h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main-content__breadcrumbs a {
+  position: relative;
+  margin-right: 36px;
+}
+
+.main-content__breadcrumbs a::after {
+  position: absolute;
+  top: 5px;
+  left: 63px;
+  display: block;
+  content: '';
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+
+.main-content__breadcrumbs a:last-child::after {
+  display: none;
+}
+
+.main-content__breadcrumbs a:last-child {
+  color: #aeacaa;
+}
+
+.shop-filters {
+  float: left;
+  width: 180px;
+}
+
+.shop-products {
+  float: right;
+  width: 730px;
+}
+
+.shop-products__item {
+  float: left;
+  width: 220px;
+  height: 286px;
+  background-color: #ffffff;
+}
+
+.shop-products__paginator {
+  clear: both;
+}
+
+
+/* -------------  ------------- Footer -------------  ------------- */
+
+.page-footer {
+  height: 190px;
+  background-image: url(../../images/footer_bg.jpg);
+  background-color: #202020;
+}
