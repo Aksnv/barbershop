@@ -1,0 +1,31 @@
+/* -------------  ------------- All styles -------------  ------------- */
+
+body {
+  background-image: url(../../images/info_bg.jpg);
+  background-repeat: repeat;
+  background-color: #f8f5f2;
+}
+
+
+/* -------------  ------------- Header -------------  ------------- */
+
+
+
+/* -------------  ------------- Main content -------------  ------------- */
+
+.main-content {
+  color: #000000;
+}
+
+.main-content a {
+  color: #000000;
+}
+
+
+/* -------------  ------------- Footer -------------  ------------- */
+
+.page-footer {
+  height: 190px;
+  background-image: url(../../images/footer_bg.jpg);
+  background-color: #232323;
+}
