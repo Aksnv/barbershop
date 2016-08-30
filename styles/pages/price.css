@@ -38,13 +38,13 @@ body {
 
 .main-content__breadcrumbs a {
   position: relative;
-  margin-right: 36px;
+  margin-right: 40px;
 }
 
 .main-content__breadcrumbs a::after {
   position: absolute;
   top: 5px;
-  left: 63px;
+  right: -23px;
   display: block;
   content: '';
   width: 7px;
