@@ -10,15 +10,170 @@ body {
 /* -------------  ------------- Header -------------  ------------- */
 
 
-
 /* -------------  ------------- Main content -------------  ------------- */
 
-.main-content {
+.main-content,
+.main-content a {
   color: #000000;
 }
 
-.main-content a {
-  color: #000000;
+.main-content__header,
+.main-content__breadcrumbs,
+.main-content__price {
+  margin-left: 11px;
+}
+
+.main-content__price {
+  overflow: hidden;
+}
+
+.main-content__header {
+  margin-top: 53px;
+}
+
+.main-content__header h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main-content__breadcrumbs a {
+  position: relative;
+  margin-right: 36px;
+}
+
+.main-content__breadcrumbs a::after {
+  position: absolute;
+  top: 5px;
+  left: 63px;
+  display: block;
+  content: '';
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+
+.main-content__breadcrumbs a:last-child::after {
+  display: none;
+}
+
+.main-content__breadcrumbs a:last-child {
+  color: #aeacaa;
+}
+
+.main-content__price-header {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.main-content__price-header strong {
+  position: relative;
+  padding-right: 13px;
+}
+
+.main-content__price-header strong::before,
+.main-content__price-header strong::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 159px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.main-content__price-header strong::before {
+  top: 31px;
+  left: -185px;
+}
+
+.main-content__price-header strong::after {
+  top: 31px;
+  right: -175px;
+}
+
+.main-content__price-brands,
+.main-content__price-about--left {
+  float: left;
+}
+
+.main-content__price-table,
+.main-content__price-about--right {
+  float: right;
+}
+
+.main-content__price-brands {
+  width: 300px;
+}
+
+.main-content__price-brands h3 {
+  margin-bottom: 30px;
+}
+
+.main-content__price-brands ul {
+  margin-left: 20px;
+}
+
+.main-content__price-brands li {
+  position: relative;
+  margin-bottom: 19px;
+}
+
+.main-content__price-brands li::before {
+  position: absolute;
+  top: 5px;
+  left: -19px;
+  display: block;
+  content: '';
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+
+.main-content__price-table {
+  margin-right: 10px;
+}
+
+.main-content__price-table h3 {
+  width: 200px;
+  margin-bottom: 35px;
+}
+
+.main-content__price-table table {
+  width: 460px;
+  border-collapse: collapse;
+}
+
+.main-content__price-table td {
+  width: 230px;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+}
+
+.main-content__price-table td:nth-of-type(even) {
+  text-align: center;
+}
+
+.main-content__price-about {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 63px;
+}
+
+.main-content__price-about h3 {
+  padding-top: 16px;
+  margin-bottom: 14px;
+}
+
+.main-content__price-about--left,
+.main-content__price-about--right {
+  width: 400px;
+}
+
+.main-content__price-about--right {
+  margin-right: 69px;
 }
 
 
@@ -27,5 +182,5 @@ body {
 .page-footer {
   height: 190px;
   background-image: url(../../images/footer_bg.jpg);
-  background-color: #232323;
+  background-color: #202020;
 }
