@@ -181,6 +181,10 @@ input[disabled] + .radio-indicator + span {
   text-transform: none;
 }
 
+.shop-products__item:hover {
+  box-shadow: 0 0 25px #aeacaa;
+}
+
 .shop-products__item-price {
   width: 186px;
   height: 43px;

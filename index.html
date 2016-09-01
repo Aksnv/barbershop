@@ -44,8 +44,8 @@
         </div>
       </div>
       <div class="main-content__information">
-        <div class="main-content__information--left">
-          <section class="main-content__information-news">
+        <div class="main-content__information-block main-content__information-block--left">
+          <section class="information-block__news">
             <h3>Новости</h3>
             <article>
               <p>Нам наконец-то завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
@@ -58,18 +58,18 @@
             <a href="#" class="button button--news">Все новости</a>
           </section>
         </div>
-        <div class="main-content__information--right">
-          <section class="main-content__information-gallery">
+        <div class="main-content__information-block main-content__information-block--right">
+          <section class="information-block__gallery">
             <h3>Фотогалерея</h3>
             <img src="images/gallery-photo.jpg" alt="Фото интерьера">
-            <button class="button button--gallery">Назад</button>
-            <button class="button button--gallery">Вперед</button>
+            <button class="button button--gallery button--gallery-previous">Назад</button>
+            <button class="button button--gallery button--gallery-next">Вперед</button>
           </section>
         </div>
       </div>
       <div class="main-content__information">
-        <div class="main-content__information--left">
-          <section class="main-content__information-contacts">
+        <div class="main-content__information-block main-content__information-block--left">
+          <section class="information-block__contacts">
             <h3>Контактная информация</h3>
             <p>
               Барбершоп &laquo;Бородинский&raquo;<br>
@@ -85,15 +85,15 @@
             <a href="#" class="button button--contacts">Обратная связь</a>
           </section>
         </div>
-        <div class="main-content__information--right">
-          <section class="main-content__information-form">
+        <div class="main-content__information-block main-content__information-block--right">
+          <section class="information-block__form">
             <h3>Записаться</h3>
             <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-            <form>
-              <input type="text" name="date" placeholder="Дата">
-              <input type="text" name="time" placeholder="Время">
-              <input type="text" name="name" placeholder="Ваше имя">
-              <input type="text" name="phone" placeholder="Телефон">
+            <form name="booking-form" method="post" action="">
+              <input type="text" name="date" placeholder="Дата" maxlength="10">
+              <input type="text" name="time" placeholder="Время" maxlength="5">
+              <input type="text" name="name" placeholder="Ваше имя" maxlength="11">
+              <input type="text" name="phone" placeholder="Телефон" maxlength="18">
               <input type="submit" name="submit" class="button button--submit" value="Отправить">
             </form>
           </section>
@@ -114,9 +114,9 @@
       <div class="page-footer__block">
         <p>Давайте дружить!</p>
         <ul class="social-links">
-          <li><a href="#" class="button button--sm button__vk">Вконтакте</a></li>
-          <li><a href="#" class="button button--sm button__fb">Фейсбук</a></li>
-          <li><a href="#" class="button button--sm button__ig">Инстаграм</a></li>
+          <li><a href="#" class="button button--social button--social-vk">Вконтакте</a></li>
+          <li><a href="#" class="button button--social button--social-fb">Фейсбук</a></li>
+          <li><a href="#" class="button button--social button--social-ig">Инстаграм</a></li>
         </ul>
       </div>
       <div class="page-footer__block">

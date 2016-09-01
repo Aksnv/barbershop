@@ -228,30 +228,32 @@ input[type="submit"] {
   margin-bottom: 25px;
 }
 
-.main-content__information--left {
-  float: left;
+.main-content__information-block {
   width: 325px;
+}
+
+.main-content__information-block--left {
+  float: left;
   margin-left: 82px;
 }
 
-.main-content__information--right {
+.main-content__information-block--right {
   float: right;
-  width: 325px;
   margin-right: 50px;
 }
 
-.main-content__information-news time {
+.information-block__news time {
   font-family: "PTSans Narrow", sans-serif;
   text-transform: none;
 }
 
-.main-content__information-news p {
+.information-block__news p {
   margin-top: 30px;
   margin-bottom: 3px;
   padding-right: 25px;
 }
 
-.main-content__information-news p:first-child {
+.information-block__news p:first-child {
   margin-top: 26px;
 }
 
@@ -259,7 +261,7 @@ input[type="submit"] {
   margin-top: 34px;
 }
 
-.main-content__information-gallery img {
+.information-block__gallery img {
   margin-top: 7px;
   margin-left: -4px;
   margin-bottom: 33px;
@@ -285,20 +287,20 @@ input[type="submit"] {
   margin-right: 0;
 }
 
-.main-content__information-contacts p {
+.information-block__contacts p {
   margin-bottom: 24px;
 }
 
-.main-content__information-contacts p:last-of-type {
+.information-block__contacts p:last-of-type {
   margin-bottom: 46px;
 }
 
-.main-content__information-form p {
+.information-block__form p {
   padding-right: 30px;
   margin-bottom: 26px;
 }
 
-.main-content__information-form input[type="text"] {
+.information-block__form input[type="text"] {
   width: 140px;
   height: 43px;
   border: 2px solid #000000;
@@ -306,15 +308,15 @@ input[type="submit"] {
   margin-bottom: 20px;
 }
 
-.main-content__information-form input:focus {
+.information-block__form input:focus {
   border: 2px solid #663d15;
 }
 
-.main-content__information-form input:nth-of-type(odd) {
+.information-block__form input:nth-of-type(odd) {
   margin-right: 23px;
 }
 
-.main-content__information-form input[placeholder] {
+.information-block__form input[placeholder] {
   padding-left: 14px;
   font-family: "PTSans NarrowBold", sans-serif;
   font-size: 14px;
@@ -352,7 +354,7 @@ input[type="submit"] {
   margin-right: 5px;
 }
 
-.button--sm {
+.button--social {
   float: left;
   width: 43px;
   height: 43px;
@@ -362,31 +364,31 @@ input[type="submit"] {
   color: transparent;
 }
 
-.button--sm:hover {
+.button--social:hover {
   background-color: #ffffff;
 }
 
-.button__vk {
+.button--social-vk {
   background-position: 8px -186px;
 }
 
-.button__fb {
+.button--social-fb {
   background-position: 16px -51px;
 }
 
-.button__ig {
+.button--social-ig {
   background-position: 11px -124px;
 }
 
-.button__vk:hover {
+.button--social-vk:hover {
   background-position: 8px -157px;
 }
 
-.button__fb:hover {
+.button--social-fb:hover {
   background-position: 16px -18px;
 }
 
-.button__ig:hover {
+.button--social-ig:hover {
   background-position: 11px -89px;
 }
 
