@@ -55,20 +55,16 @@ a {
   color: #ffffff;
 }
 
-.link {
+.inline-link {
   text-decoration: underline;
-}
-
-h3 {
-  font-size: 24px;
 }
 
 p {
   line-height: 24px;
 }
 
-input:focus {
-  outline: none;
+img { 
+  max-width: 100% 
 }
 
 button,
@@ -80,8 +76,8 @@ input[type="submit"] {
   color: #ffffff;
 }
 
-button:focus,
-input[type="submit"] {
+input:focus,
+button:focus {
   outline: none;
 }
 
@@ -89,24 +85,26 @@ input[type="submit"] {
   display: block;
   width: 140px;
   height: 43px;
-  border-left: 1px solid #100f0f;
-  border-right: 1px solid #100f0f;
   text-align: center;
   line-height: 43px;
+  border-left: 1px solid #100f0f;
+  border-right: 1px solid #100f0f;
   background-color: #000000;
 }
 
 .button:hover {
-  background-color: #663d15;
   border-left: 1px solid #6f4923;
   border-right: 1px solid #6f4923;
+  background-color: #663d15;
 }
+ 
 
 /* -------------  ------------- Header -------------  ------------- */
 
 .page-header {
   height: 72px;
   font-size: 16px;
+  margin-bottom: 57px;
   background-color: #000000;
 }
 
@@ -152,7 +150,7 @@ input[type="submit"] {
   background-image: url(../images/sprite.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .login__item:hover::before {
@@ -176,14 +174,15 @@ input[type="submit"] {
 /* -------------  ------------- Main content -------------  ------------- */
 
 .main-content__logo {
-  width: 355px;
+  width: 400px;
   margin: 0 auto;
-  margin-top: 57px;
   margin-bottom: 18px;
+  padding-left: 22px;
 }
 
 .main-content__promo {
   overflow: hidden;
+  margin-bottom: 64px;
 }
 
 .main-content__promo-block {
@@ -212,11 +211,8 @@ input[type="submit"] {
   transform: rotate(45deg);
 }
 
-.main-content__promo-block p {
-  margin-bottom: 78px;
-}
-
 .main-content__information {
+  overflow: hidden;
   width: 940px;
   min-height: 430px;
   margin: 0 auto;
@@ -232,14 +228,14 @@ input[type="submit"] {
   margin-bottom: 63px;
 }
 
-.main-content__information h3 {
-  font-size: 30px;
-  padding-top: 17px;
-  margin-bottom: 25px;
-}
-
 .main-content__information-block {
   width: 325px;
+}
+
+.main-content__information-block h3 {
+  font-size: 30px;
+  margin-top: 47px;
+  margin-bottom: 25px;
 }
 
 .main-content__information-block--left {
@@ -269,6 +265,7 @@ input[type="submit"] {
 
 .button--news {
   margin-top: 34px;
+  margin-bottom: 53px;
 }
 
 .information-block__gallery img {
@@ -316,9 +313,10 @@ input[type="submit"] {
   border: 2px solid #000000;
   margin-left: -4px;
   margin-bottom: 20px;
+  background-color: #f9f6f3;
 }
 
-.information-block__form input:focus {
+.information-block__form input[type="text"]:focus {
   border: 2px solid #663d15;
 }
 
@@ -336,13 +334,14 @@ input[type="submit"] {
 .button--submit {
   width: 301px;
   margin-top: 12px;
+  margin-left: -4px;
 }
 
 
 /* -------------  ------------- Footer -------------  ------------- */
 
 .page-footer {
-  height: 190px;
+  height: 189px;
   background-color: #202020;
 }
 
@@ -362,6 +361,10 @@ input[type="submit"] {
 .page-footer__block:last-child {
   float: right;
   margin-right: 5px;
+}
+
+.social-links {
+  font-size: 1px;
 }
 
 .button--social {
