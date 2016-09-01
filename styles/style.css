@@ -108,38 +108,55 @@ button:focus {
   background-color: #000000;
 }
 
-.main-menu {
+.page-header__logo {
+  float: left;
+}
+
+.page-header__logo a {
+  display: block;
+  width: 111px;
+  height: 72px;
+  margin-left: 29px;
+  margin-right: 10px;
+  font-size: 1px;
+  background-image: url(../images/logo_small.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.page-header__menu {
   float: left;
   padding-left: 9px;
 }
 
-.login {
+.page-header__login {
   float: right;
   position: relative;
   padding-right: 10px;
 }
 
-.main-menu__item {
+.page-header__menu-item {
   float: left;
 }
 
-.main-menu__item a, 
-.login__item {
+.page-header__menu-item a, 
+.page-header__login a {
   display: block;
   line-height: 72px;
 }
 
-.main-menu__item a {
-  padding-right: 22px;
+.page-header__menu-item a {
+  padding-right: 19px;
   padding-left: 21px;
 }
 
-.login__item {
+.page-header__login a {
   padding-right: 20px;
   padding-left: 53px;
 }
 
-.login__item::before {
+.page-header__login a::before {
   position: absolute;
   top: 28px;
   left: 20px;
@@ -153,16 +170,16 @@ button:focus {
   opacity: 0.3;
 }
 
-.login__item:hover::before {
+.page-header__login a:hover::before {
   opacity: 1;
 }
 
-.main-menu__item:hover, 
-.login__item:hover {
+.page-header__menu-item:hover, 
+.page-header__login a:hover {
   background-color: #242424;
 }
 
-.main-menu__item-active a::after {
+.page-header__menu-item-active a::after {
   content: '';
   display: block;
   height: 4px;
