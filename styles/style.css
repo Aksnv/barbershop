@@ -179,7 +179,7 @@ button:focus {
   background-color: #242424;
 }
 
-.page-header__menu-item-active a::after {
+.page-header__menu-item--active a::after {
   content: '';
   display: block;
   height: 4px;
