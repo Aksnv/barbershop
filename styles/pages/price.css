@@ -31,7 +31,7 @@ body {
   margin-top: 53px;
 }
 
-.main-content__header h2 {
+.main-content__header h1 {
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -107,7 +107,7 @@ body {
   width: 300px;
 }
 
-.main-content__price-brands h3 {
+.main-content__price-brands h2 {
   margin-bottom: 30px;
 }
 
@@ -136,7 +136,7 @@ body {
   margin-right: 10px;
 }
 
-.main-content__price-table h3 {
+.main-content__price-table h2 {
   width: 200px;
   margin-bottom: 35px;
 }
@@ -162,7 +162,7 @@ body {
   padding-bottom: 63px;
 }
 
-.main-content__price-about h3 {
+.main-content__price-about h2 {
   padding-top: 16px;
   margin-bottom: 14px;
 }
@@ -180,7 +180,5 @@ body {
 /* -------------  ------------- Footer -------------  ------------- */
 
 .page-footer {
-  height: 190px;
   background-image: url(../../images/footer_bg.jpg);
-  background-color: #202020;
 }

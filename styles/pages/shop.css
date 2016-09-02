@@ -241,7 +241,5 @@ a.button--paginator-active:hover {
 /* -------------  ------------- Footer -------------  ------------- */
 
 .page-footer {
-  height: 190px;
   background-image: url(../../images/footer_bg.jpg);
-  background-color: #202020;
 }
