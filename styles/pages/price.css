@@ -9,6 +9,9 @@ body {
 
 /* -------------  ------------- Header -------------  ------------- */
 
+.page-header {
+  margin-bottom: 53px;
+}
 
 /* -------------  ------------- Main content -------------  ------------- */
 
@@ -32,13 +35,12 @@ body {
 }
 
 .main-content__header h1 {
-  font-size: 30px;
   margin-bottom: 20px;
 }
 
 .main-content__breadcrumbs a {
   position: relative;
-  margin-right: 40px;
+  margin-right: 36px;
 }
 
 .main-content__breadcrumbs a::after {
@@ -65,7 +67,7 @@ body {
   font-size: 48px;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .main-content__price-header strong {
@@ -138,7 +140,7 @@ body {
 
 .main-content__price-table h2 {
   width: 200px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .main-content__price-table table {
@@ -159,11 +161,11 @@ body {
 .main-content__price-about {
   clear: both;
   overflow: hidden;
-  padding-bottom: 63px;
+  padding-bottom: 62px;
 }
 
 .main-content__price-about h2 {
-  padding-top: 16px;
+  padding-top: 21px;
   margin-bottom: 14px;
 }
 

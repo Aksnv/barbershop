@@ -166,7 +166,7 @@ input[disabled] + .radio-indicator + span {
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: #ffffff;
-  box-shadow: 0 0 15px #aeacaa;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
 .shop-products__item:nth-child(3n) {
@@ -182,7 +182,7 @@ input[disabled] + .radio-indicator + span {
 }
 
 .shop-products__item:hover {
-  box-shadow: 0 0 25px #aeacaa;
+  box-shadow: 3px 3px 25px rgba(0, 1, 1, 0.3);
 }
 
 .shop-products__item-price {

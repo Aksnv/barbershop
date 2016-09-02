@@ -59,6 +59,14 @@ a {
   text-decoration: underline;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 p {
   line-height: 24px;
 }
@@ -319,6 +327,10 @@ button:focus {
   margin-bottom: 46px;
 }
 
+.information-block__form {
+  position: relative;
+}
+
 .information-block__form p {
   padding-right: 30px;
   margin-bottom: 26px;
@@ -348,10 +360,18 @@ button:focus {
   text-transform: uppercase;
 }
 
+.information-block__form input[placeholder]::-webkit-input-placeholder {
+  color: #000000;
+} 
+
+.information-block__form input[placeholder]::-moz-placeholder {
+  color: #000000;
+}
+
 .button--submit {
   width: 301px;
-  margin-top: 12px;
   margin-left: -4px;
+  margin-top: 13px;
 }
 
 
