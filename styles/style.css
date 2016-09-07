@@ -347,6 +347,7 @@ button:focus {
   border: 2px solid #000000;
   margin-left: -4px;
   margin-bottom: 20px;
+  padding: 0 14px;
   background-color: #f9f6f3;
 }
 
@@ -416,6 +417,7 @@ button:focus {
   width: 43px;
   height: 43px;
   margin-right: 5px;
+  margin-bottom: 5px;
   background-image: url(../images/sprite.png);
   background-repeat: no-repeat;
   color: transparent;
