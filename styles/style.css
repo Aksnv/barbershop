@@ -202,9 +202,12 @@ button:focus {
 
 .main-content__logo {
   width: 400px;
+  height: 204px; 
   margin: 0 auto;
-  margin-bottom: 18px;
-  padding-left: 22px;
+  margin-bottom: 22px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 22px 0; 
 }
 
 .main-content__promo {
@@ -380,13 +383,15 @@ button:focus {
 /* -------------  ------------- Footer -------------  ------------- */
 
 .page-footer {
-  height: 189px;
+  overflow: hidden;
+  min-height: 189px;
   background-color: #202020;
 }
 
 .page-footer__block {
   float: left;
   min-width: 144px;
+  max-width: 305px;
   margin-top: 43px;
   margin-left: 11px;
   margin-right: 87px;
