@@ -44,6 +44,18 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  line-height: 24px;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -57,18 +69,6 @@ a {
 
 .inline-link {
   text-decoration: underline;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-p {
-  line-height: 24px;
 }
 
 img { 
@@ -366,9 +366,9 @@ button:focus {
   color: #000000;
 } 
 
-.information-block__form input[placeholder]::-moz-placeholder {
+/* .information-block__form input[placeholder]::-moz-placeholder {
   color: #000000;
-}
+} */
 
 .button--submit {
   width: 301px;
