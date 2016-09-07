@@ -110,7 +110,8 @@ button:focus {
 /* -------------  ------------- Header -------------  ------------- */
 
 .page-header {
-  height: 72px;
+  overflow: hidden;
+  min-height: 72px;
   font-size: 16px;
   margin-bottom: 57px;
   background-color: #000000;
@@ -135,6 +136,7 @@ button:focus {
 
 .page-header__menu {
   float: left;
+  max-width: 560px;
   padding-left: 9px;
 }
 
