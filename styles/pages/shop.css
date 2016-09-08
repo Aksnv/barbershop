@@ -3,12 +3,16 @@
 body {
   background-image: url(../../images/info_bg.jpg);
   background-repeat: repeat;
+  background-attachment: scroll;
   background-color: #f8f5f2;
 }
 
 
 /* -------------  ------------- Header -------------  ------------- */
 
+.page-header {
+  margin-bottom: 53px;
+}
 
 /* -------------  ------------- Main content -------------  ------------- */
 
@@ -222,7 +226,6 @@ input[disabled] + .radio-indicator + span {
 .button--paginator:hover {
   border: none;
   background-color: #663d15;
-  
 }
 
 .button--paginator-active {
