@@ -186,7 +186,7 @@ input[disabled] + .radio-indicator + span {
 }
 
 .shop-products__item:hover {
-  box-shadow: 3px 3px 25px rgba(0, 1, 1, 0.3);
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.4);
 }
 
 .shop-products__item-price {
