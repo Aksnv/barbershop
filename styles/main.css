@@ -48,6 +48,17 @@ h2, h3 {
   font-size: 24px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 p {
   line-height: 24px;
 }
@@ -149,7 +160,7 @@ button:focus {
   padding-left: 9px;
 }
 
-.page-header__login {
+.page-header__personal {
   float: right;
   position: relative;
   padding-right: 10px;
@@ -160,7 +171,7 @@ button:focus {
 }
 
 .page-header__menu-item a, 
-.page-header__login a {
+.page-header__personal a {
   display: block;
   line-height: 72px;
 }
@@ -170,12 +181,12 @@ button:focus {
   padding-left: 21px;
 }
 
-.page-header__login a {
+.page-header__personal a {
   padding-right: 20px;
   padding-left: 53px;
 }
 
-.page-header__login a::before {
+.page-header__personal a::before {
   position: absolute;
   top: 28px;
   left: 20px;
@@ -189,12 +200,12 @@ button:focus {
   opacity: 0.3;
 }
 
-.page-header__login a:hover::before {
+.page-header__personal a:hover::before {
   opacity: 1;
 }
 
 .page-header__menu-item:hover, 
-.page-header__login a:hover {
+.page-header__personal a:hover {
   background-color: #242424;
 }
 
@@ -219,12 +230,12 @@ button:focus {
   background-position: 22px 0; 
 }
 
-.main-content__promo {
+.main-content__advantages {
   overflow: hidden;
   margin-bottom: 64px;
 }
 
-.main-content__promo-block {
+.main-content__advantages-block {
   position: relative;
   float: left;
   width: 284px;
@@ -232,13 +243,13 @@ button:focus {
   text-align: center;
 }
 
-.main-content__promo-block strong {
+.main-content__advantages-block strong {
   display: block;
   font-size: 30px;
   padding-bottom: 57px;
 }
 
-.main-content__promo-block::after {
+.main-content__advantages-block::after {
   position: absolute;
   top: 59px;
   left: 133px;
