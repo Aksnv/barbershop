@@ -1,5 +1,3 @@
-/* -------------  ------------- All styles -------------  ------------- */
-
 @font-face {
   font-family: "PT Sans Narrow";
   font-style: normal;
@@ -103,9 +101,22 @@ button:focus {
   border-right: 1px solid #6f4923;
   background-color: #663d15;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  padding-right: 9px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
  
 
-/* -------------  ------------- Header -------------  ------------- */
+/* -------------  Header  ------------- */
 
 .page-header {
   overflow: hidden;
@@ -196,7 +207,7 @@ button:focus {
 }
 
 
-/* -------------  ------------- Main content -------------  ------------- */
+/* ------------- Main content ------------- */
 
 .main-content__logo {
   width: 400px;
@@ -379,7 +390,7 @@ button:focus {
 }
 
 
-/* -------------  ------------- Footer -------------  ------------- */
+/* -------------  Footer ------------- */
 
 .page-footer {
   overflow: hidden;
