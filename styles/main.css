@@ -235,7 +235,7 @@ button:focus {
   margin-bottom: 64px;
 }
 
-.main-content__advantages-block {
+.main-content__advantages-item {
   position: relative;
   float: left;
   width: 284px;
@@ -243,13 +243,13 @@ button:focus {
   text-align: center;
 }
 
-.main-content__advantages-block strong {
+.main-content__advantages-item strong {
   display: block;
   font-size: 30px;
   padding-bottom: 57px;
 }
 
-.main-content__advantages-block::after {
+.main-content__advantages-item::after {
   position: absolute;
   top: 59px;
   left: 133px;
@@ -261,7 +261,7 @@ button:focus {
   transform: rotate(45deg);
 }
 
-.main-content__information {
+.wrapper {
   overflow: hidden;
   width: 940px;
   min-height: 430px;
@@ -274,42 +274,42 @@ button:focus {
   color: #000000;
 }
 
-.main-content__information:last-child {
+.wrapper:last-child {
   margin-bottom: 63px;
 }
 
-.main-content__information-block {
+.inner {
   width: 325px;
 }
 
-.main-content__information-block h2 {
+.inner h2 {
   font-size: 30px;
   margin-top: 47px;
   margin-bottom: 25px;
 }
 
-.main-content__information-block--left {
+.inner--left {
   float: left;
   margin-left: 82px;
 }
 
-.main-content__information-block--right {
+.inner--right {
   float: right;
   margin-right: 50px;
 }
 
-.information-block__news time {
+.main-content__news time {
   font-family: "PT Sans Narrow", sans-serif;
   text-transform: none;
 }
 
-.information-block__news p {
+.main-content__news p {
   margin-top: 30px;
   margin-bottom: 3px;
   padding-right: 25px;
 }
 
-.information-block__news p:first-child {
+.main-content__news p:first-child {
   margin-top: 26px;
 }
 
@@ -318,7 +318,7 @@ button:focus {
   margin-bottom: 53px;
 }
 
-.information-block__gallery img {
+.main-content__gallery img {
   margin-top: 7px;
   margin-left: -4px;
   margin-bottom: 33px;
@@ -344,24 +344,24 @@ button:focus {
   margin-right: 0;
 }
 
-.information-block__contacts p {
+.main-content__contacts p {
   margin-bottom: 24px;
 }
 
-.information-block__contacts p:last-of-type {
+.main-content__contacts p:last-of-type {
   margin-bottom: 46px;
 }
 
-.information-block__form {
+.main-content__appointment {
   position: relative;
 }
 
-.information-block__form p {
+.main-content__appointment p {
   padding-right: 30px;
   margin-bottom: 26px;
 }
 
-.information-block__form input[type="text"] {
+.main-content__appointment input[type="text"] {
   width: 140px;
   height: 43px;
   border: 2px solid #000000;
@@ -371,26 +371,26 @@ button:focus {
   background-color: #f9f6f3;
 }
 
-.information-block__form input[type="text"]:focus {
+.main-content__appointment input[type="text"]:focus {
   border: 2px solid #663d15;
 }
 
-.information-block__form input:nth-of-type(odd) {
+.main-content__appointment input:nth-of-type(odd) {
   margin-right: 23px;
 }
 
-.information-block__form input[placeholder] {
+.main-content__appointment input[placeholder] {
   padding-left: 14px;
   font-family: "PT Sans Narrow Bold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.information-block__form input[placeholder]::-webkit-input-placeholder {
+.main-content__appointment input[placeholder]::-webkit-input-placeholder {
   color: #000000;
 } 
 
-/* .information-block__form input[placeholder]::-moz-placeholder {
+/* .main-content__appointment input[placeholder]::-moz-placeholder {
   color: #000000;
 } */
 
@@ -409,7 +409,9 @@ button:focus {
   background-color: #202020;
 }
 
-.page-footer__block {
+.page-footer__contacts,
+.page-footer__socials,
+.page-footer__copyrights {
   float: left;
   min-width: 144px;
   max-width: 305px;
@@ -417,13 +419,13 @@ button:focus {
   text-align: center;
 }
 
-.page-footer__block:first-child {
+.page-footer__contacts {
   margin-left: 11px;
   margin-right: 101px;
   text-align: left;
 }
 
-.page-footer__block:last-child {
+.page-footer__copyrights {
   float: right;
   margin-right: 5px;
 }
