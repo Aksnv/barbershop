@@ -55,7 +55,7 @@ h2, h3 {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -129,7 +129,7 @@ button:focus {
 
 /* -------------  Header  ------------- */
 
-.page-header {
+.main-header {
   overflow: hidden;
   min-height: 72px;
   font-size: 16px;
@@ -137,11 +137,11 @@ button:focus {
   background-color: #000000;
 }
 
-.page-header__logo {
+.main-header__logo {
   float: left;
 }
 
-.page-header__logo a {
+.main-header__logo a {
   display: block;
   width: 111px;
   height: 72px;
@@ -154,39 +154,39 @@ button:focus {
   color: transparent;
 }
 
-.page-header__menu {
+.main-header__menu {
   float: left;
   max-width: 560px;
   padding-left: 9px;
 }
 
-.page-header__personal {
+.main-header__personal {
   float: right;
   position: relative;
   padding-right: 10px;
 }
 
-.page-header__menu-item {
+.main-header__menu-item {
   float: left;
 }
 
-.page-header__menu-item a, 
-.page-header__personal a {
+.main-header__menu-item a, 
+.main-header__personal a {
   display: block;
   line-height: 72px;
 }
 
-.page-header__menu-item a {
+.main-header__menu-item a {
   padding-right: 19px;
   padding-left: 21px;
 }
 
-.page-header__personal a {
+.main-header__personal a {
   padding-right: 20px;
   padding-left: 53px;
 }
 
-.page-header__personal a::before {
+.main-header__personal a::before {
   position: absolute;
   top: 28px;
   left: 20px;
@@ -200,16 +200,16 @@ button:focus {
   opacity: 0.3;
 }
 
-.page-header__personal a:hover::before {
+.main-header__personal a:hover::before {
   opacity: 1;
 }
 
-.page-header__menu-item:hover, 
-.page-header__personal a:hover {
+.main-header__menu-item:hover, 
+.main-header__personal a:hover {
   background-color: #242424;
 }
 
-.page-header__menu-item--active a::after {
+.main-header__menu-item--active a::after {
   content: '';
   display: block;
   height: 4px;
@@ -403,15 +403,15 @@ button:focus {
 
 /* -------------  Footer ------------- */
 
-.page-footer {
+.main-footer {
   overflow: hidden;
   min-height: 189px;
   background-color: #202020;
 }
 
-.page-footer__contacts,
-.page-footer__socials,
-.page-footer__copyrights {
+.main-footer__contacts,
+.main-footer__socials,
+.main-footer__copyrights {
   float: left;
   min-width: 144px;
   max-width: 305px;
@@ -419,13 +419,13 @@ button:focus {
   text-align: center;
 }
 
-.page-footer__contacts {
+.main-footer__contacts {
   margin-left: 11px;
   margin-right: 101px;
   text-align: left;
 }
 
-.page-footer__copyrights {
+.main-footer__copyrights {
   float: right;
   margin-right: 5px;
 }

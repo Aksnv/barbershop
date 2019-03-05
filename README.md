@@ -1,3 +1,3 @@
-Barbershop «Borodinski» from HTML Academy 
+Барбершоп «Бородинский» (HTML Academy)
 - Fixed layout
-- HTML5, CSS3, JS, SVG
+- HTML5, CSS3, JS, SVG, flexbox

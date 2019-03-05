@@ -14,100 +14,113 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <header class="page-header">
+  <header class="main-header">
     <div class="container">
-      <div class="page-header__logo">
-        <a href="../index.html">Барбершоп &laquo;Бородинский&raquo;</a>
-      </div>
-      <nav class="page-header__menu">
-        <ul>
-          <!-- <li class="page-header__menu-item"><a href="#">Главная</a></li> -->
-          <li class="page-header__menu-item"><a href="#">Информация</a></li>
-          <li class="page-header__menu-item"><a href="#">Новости</a></li>
-          <li class="page-header__menu-item page-header__menu-item--active"><a href="price.html">Прайс-лист</a></li>
-          <li class="page-header__menu-item"><a href="shop.html">Магазин</a></li>
-          <li class="page-header__menu-item"><a href="#">Контакты</a></li>
+      <nav class="main-navigation">       
+        <a class="logo" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation__link"><a href="#">Информация</a></li>
+          <li class="site-navigation__link"><a href="#">Новости</a></li>
+          <li class="site-navigation__link site-navigation__link_current"><a href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation__link"><a href="shop.html">Магазин</a></li>
+          <li class="site-navigation__link"><a href="#">Контакты</a></li>
         </ul>
-      </nav>
-      <div class="page-header__login">
-        <a href="#">Вход</a>
-      </div>
+        <ul class="user-navigation">
+          <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
+        </ul>
+      </nav>      
     </div>
   </header>
-  <section class="main-content">
+  <main>
     <div class="container">
-      <div class="main-content__header">
-        <h1>Прайс-лист</h1>
-      </div>
-      <div class="main-content__breadcrumbs">
-        <a href="../index.html" class="main-content__breadcrumbs-item">Главная</a>
-        <a href="#" class="main-content__breadcrumbs-item">Прайс-лист</a>
-      </div>
-      <div class="main-content__price">
-        <div class="main-content__price-header">
-          <strong>Истинно мужская классика</strong>
-        </div>
-        <div class="main-content__price-brands">
-          <h2>Мы используем только лучшие средства:</h2>
-          <ul>
-            <li>Baxter of California</li>
-            <li>Mr Natty</li>
-            <li>Suavecito</li>
-            <li>Malin+Goetz</li>
-          </ul>
-        </div>
-        <div class="main-content__price-table">
-          <h2>Цены на услуги наших мастеров:</h2>
-          <table>
-            <tr>
-              <td>Стрижка</td>
-              <td>1500 р.</td>
-            </tr>
-            <tr>
-              <td>Стрижка бороды</td>
-              <td>500 р.</td>
-            </tr>
-            <tr>
-              <td>Накрутка усов</td>
-              <td>350 р.</td>
-            </tr>
-          </table>
-        </div>
-        <div class="main-content__price-about">
-          <h2>Несколько слов о нас:</h2>
-          <div class="main-content__price-about--left">
-            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и&nbsp;продуманная до мелочей работа. Мы не работаем на количество,&nbsp;мы делаем качество.</p>
-          </div>
-          <div class="main-content__price-about--right">
-            <p>Наша мастерская расположена в центре города, поэтому сделать&nbsp;стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для&nbsp;вас атмосферу, чувствовать себя комфортно и свободно!</p>
-          </div>
-        </div>
-      </div>
+      <h1>Прайс-лист</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="../index.html">Главная</a></li>
+        <li class="breadcrumbs__item breadcrumbs__item_current">Прайс-лист</li>
+      </ul>
+      <p class="price-promo">Истинно мужская классика</p>
+      <section class="price-brands">
+        <h2>Мы&nbsp;используем только лучшие средства:</h2>
+        <ul>
+          <li>Baxter of&nbsp;California</li>
+          <li>Mr&nbsp;Natty</li>
+          <li>Suavecito</li>
+          <li>Malin+Goetz</li>
+        </ul>
+      </section>
+      <section class="price-table">
+        <h2>Цены на услуги наших мастеров:</h2>
+        <table>
+          <tr>
+            <td>Стрижка</td>
+            <td>1500 ₽</td>
+          </tr>
+          <tr>
+            <td>Стрижка бороды</td>
+            <td>500 ₽</td>
+          </tr>
+          <tr>
+            <td>Накрутка усов</td>
+            <td>350 ₽</td>
+          </tr>
+        </table>
+      </section>
+      <section class="price-about">
+        <h2>Несколько слов о нас:</h2>
+        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
+        <p>Наша мастерская расположена в&nbsp;центре города, поэтому сделать стильную стрижку можно в&nbsp;любое время, даже в&nbsp;обеденный перерыв. Здесь вы&nbsp;можете погрузиться в&nbsp;удобную для вас атмосферу, чувствовать себя комфортно и&nbsp;свободно!</p>
+      </section>
     </div>
-  </section>
-  <footer class="page-footer">
+  </main>
+  <footer class="main-footer">
     <div class="container">
-      <div class="page-footer__block">
+      <div class="footer-contacts">
         <p>
           Барбершоп &laquo;Бородинский&raquo;<br>
-          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          Адрес: г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br>
           <a class="inline-link" href="#">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </p>
       </div>
-      <div class="page-footer__block">
+      <div class="footer-socials">
         <p>Давайте дружить!</p>
-        <ul class="social-links">
-          <li><a href="#" class="button button--social button--social-vk">Вконтакте</a></li>
-          <li><a href="#" class="button button--social button--social-fb">Фейсбук</a></li>
-          <li><a href="#" class="button button--social button--social-ig">Инстаграм</a></li>
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="button button_social button_social_vk" href="#">Вконтакте</a>
+          </li>
+          <li class="socials-list__item">
+            <a class="button button_social button_social_fb" href="#">Фейсбук</a></li>
+          <li class="socials-list__item">
+            <a class="button button_social button_social_ig" href="#">Инстаграм</a>
+          </li>
         </ul>
       </div>
-      <div class="page-footer__block">
+      <div class="footer-copyrights">
         <p>Разработано:</p>
-        <a href="#" class="button button--developers">htmlacademy.ru</a>
+        <p><a class="button button_copyrights" href="https://htmlacademy.ru/">HTML Academy</a></p>
       </div>
     </div>
   </footer>
+  <section class="popup popup_login">
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и&nbsp;пароль</p>
+    <form class="login-form" name="login-form" method="post" action="#">
+      <p>
+        <label for="login-form__field_login"></label>
+        <input class="login-form__field" id="login-form__field_login" type="text" name="login-form__field_login" placeholder="Логин">
+      </p>
+      <p>
+        <label for="login-form__field_password"></label>
+        <input class="login-form__field" id="login-form__field_password" type="password" name="login-form__field_password" placeholder="Пароль">
+      </p>
+      <p>
+        <input class="login-form__checkbox" id="login-form__checkbox_remember" type="checkbox" name="login-form__checkbox_remember" checked>
+        <label for="login-form__checkbox_remember">Запомните меня</label>
+        <a class="inline-link" href="#">Я забыл пароль!</a>
+      </p>
+      <p><button class="button button_wide login-form__button login-form__button_submit" type="submit" name="login-form__button_submit">Войти</button></p>
+    </form>
+    <button class="popup__close-button" type="button">Закрыть</button>
+  </section>
 </body>
 </html>
