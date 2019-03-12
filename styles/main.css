@@ -2,19 +2,22 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 400;
-  src: local("PT Sans Narrow"),
+  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
        url(../fonts/web/ptsansnarrow.woff2) format("woff2"),
-       url(../fonts/web/ptsansnarrow.woff) format("woff")
+       url(../fonts/web/ptsansnarrow.woff) format("woff");
 }
 
 @font-face {
   font-family: "PT Sans Narrow Bold";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans Narrow Bold"),
+  src: local("PT Sans Narrow Bold"), local("PTSans-NarrowBold"),
        url(../fonts/web/ptsansnarrowbold.woff2) format("woff2"),
-       url(../fonts/web/ptsansnarrowbold.woff) format("woff")
-}
+       url(../fonts/web/ptsansnarrowbold.woff) format("woff");
+}*/
+
+
+/*
 
 * {
   box-sizing: border-box;
@@ -23,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow Bold", sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
