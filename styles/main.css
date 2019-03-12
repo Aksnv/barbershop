@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 400;
@@ -129,7 +129,7 @@ button:focus {
 
 /* -------------  Header  ------------- */
 
-.main-header {
+/*.main-header {
   overflow: hidden;
   min-height: 72px;
   font-size: 16px;
@@ -215,12 +215,12 @@ button:focus {
   height: 4px;
   margin-top: -4px;
   background-color: #ffffff;
-}
+}*/
 
 
 /* ------------- Main content ------------- */
 
-.main-content__logo {
+/*.main-content__logo {
   width: 400px;
   height: 204px; 
   margin: 0 auto;
@@ -388,22 +388,18 @@ button:focus {
 
 .main-content__appointment input[placeholder]::-webkit-input-placeholder {
   color: #000000;
-} 
-
-/* .main-content__appointment input[placeholder]::-moz-placeholder {
-  color: #000000;
-} */
+}
 
 .button--submit {
   width: 301px;
   margin-left: -4px;
   margin-top: 13px;
-}
+}*/
 
 
 /* -------------  Footer ------------- */
 
-.main-footer {
+/*.main-footer {
   overflow: hidden;
   min-height: 189px;
   background-color: #202020;
@@ -476,4 +472,4 @@ button:focus {
 .button--developers:hover {
   background-color: #ffffff;
   color: #000000;
-}
+}*/
