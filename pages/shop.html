@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Магазин - Барбершоп «Бородинский»</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/main.css">
   <!-- <link rel="stylesheet" href="../styles/shop.css"> -->
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
@@ -16,21 +17,23 @@
 </head>
 <body class="inner-page">
   <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">       
-        <a class="logo" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
-        <ul class="site-navigation">
-          <li class="site-navigation__link"><a href="#">Информация</a></li>
-          <li class="site-navigation__link"><a href="#">Новости</a></li>
-          <li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
-          <li class="site-navigation__link site-navigation__link_current"><a href="shop.html">Магазин</a></li>
-          <li class="site-navigation__link"><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
-        </ul>
-      </nav>      
-    </div>
+    <nav class="main-navigation">       
+      <div class="navigation-wrapper">
+        <div class="container">
+          <a class="logo" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
+          <ul class="site-navigation">
+            <li class="site-navigation__link"><a href="#">Информация</a></li>
+            <li class="site-navigation__link"><a href="#">Новости</a></li>
+            <li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
+            <li class="site-navigation__link site-navigation__link_current"><a href="shop.html">Магазин</a></li>
+            <li class="site-navigation__link"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
     <div class="container">

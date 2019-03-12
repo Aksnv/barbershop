@@ -50,18 +50,17 @@
        url(../fonts/web/ptsansnarrowbold.woff) format("woff");
 }*/
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after, *::before, *::after {
-  box-sizing: inherit;
-}
-
-
 body {  
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
 
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -87,6 +86,12 @@ body {
   background-position: left top;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -97,6 +102,10 @@ a {
 
 .inline-link {
   text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
 }
 
 .button {
@@ -139,13 +148,7 @@ a {
 }*/
 
 
-/*
-.container {
-  width: 940px;
-  margin: 0 auto;
-}
-
-h1 {
+/*h1 {
   font-size: 30px;
 }
 
@@ -172,11 +175,6 @@ input[type="submit"] {
   color: #ffffff;
 }
 
-input:focus,
-button:focus {
-  outline: none;
-}
-
 .button {
   display: block;
   width: 140px;
@@ -196,6 +194,92 @@ button:focus {
  
 
 /* -------------  Header  ------------- */
+
+.main-navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 111px;
+  height: 24px;
+}
+
+.logo_index {
+  order: 1;
+  width: 371px;
+  height: 155px;
+  margin: auto;
+}
+
+.navigation-wrapper {
+  min-height: 72px;
+  margin-bottom: 60px;
+
+  background-color: #000000;
+}
+
+.navigation-wrapper .container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation,
+.user-navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation {
+  width: 620px;
+}
+
+.site-navigation__link a,
+.user-navigation__link a {
+  display: block;
+
+  line-height: 72px;
+}
+
+.site-navigation__link a {
+  padding: 0 22px;
+}
+
+.site-navigation__link:last-child {
+  margin-right: 0;
+}
+
+.user-navigation {
+  justify-content: flex-end;
+  width: 160px;
+}
+
+.user-navigation__link a {
+  padding: 0 20px;
+  padding-left: 53px;
+}
 
 /*.main-header {
   overflow: hidden;
