@@ -519,6 +519,28 @@ input[type="submit"] {
   text-align: right;
 }
 
+/* Main content - Price */
+
+.price-brands {
+  width: 380px;
+}
+
+.price-table {
+  width: 460px;
+}
+
+.price-about__wrapper {
+  column-count: 2;
+}
+
+.price-about__text {
+  width: 380px;
+}
+
+.price-about__text:first-child {
+  margin-top: 0;
+}
+
 
 /* -------------  Footer ------------- */
 
