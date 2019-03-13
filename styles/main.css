@@ -254,6 +254,10 @@ input[type="submit"] {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -318,6 +322,10 @@ input[type="submit"] {
   padding: 0;
 
   list-style-type: none;
+}
+
+.breadcrumbs {
+  margin-bottom: 60px;
 }
 
 .breadcrumbs__item {
@@ -411,6 +419,10 @@ input[type="submit"] {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 25px;
@@ -448,6 +460,65 @@ input[type="submit"] {
   display: block;
 }
 
+/* Main content - Product */
+
+.product-images {
+  width: 460px;
+}
+
+.product-images__view {
+  margin-bottom: 20px;
+}
+
+.product-images__thumbnails {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.product-images__thumbnails-item {
+  width: 140px;
+  margin-right: 20px;
+}
+
+.product-images__thumbnails-item:last-child {
+  margin-right: 0;
+}
+
+.product-info {
+  width: 390px;
+}
+
+.product-info__wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info__status {
+  width: 150px;
+}
+
+.product-info__сode {
+  width: 220px;
+
+  text-align: right;
+}
+
 
 /* -------------  Footer ------------- */
 
@@ -461,6 +532,12 @@ input[type="submit"] {
   background-image: url("../images/backgrounds/dark-bg.jpg");
   background-repeat: repeat;
   background-position: left top;
+}
+
+.inner-page .main-footer {
+  background-image: url("../images/backgrounds/footer-inner-bg.jpg"), url("../images/backgrounds/dark-bg.jpg");
+  background-repeat: repeat-x, repeat;
+  background-position: left top, left top;
 }
 
 .main-footer .container {
