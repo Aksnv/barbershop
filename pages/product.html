@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/main.css">
-  <!-- <link rel="stylesheet" href="../styles/product.css"> -->
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -17,63 +16,57 @@
 </head>
 <body class="inner-page">
   <header class="main-header">
-    <nav class="main-navigation">       
-      <div class="navigation-wrapper">
-        <div class="container">
-          <a class="logo" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
-          <ul class="site-navigation">
-            <li class="site-navigation__link"><a href="#">Информация</a></li>
-            <li class="site-navigation__link"><a href="#">Новости</a></li>
-            <li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
-            <li class="site-navigation__link site-navigation__link_current"><a href="shop.html">Магазин</a></li>
-            <li class="site-navigation__link"><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
-          </ul>
-        </div>
-      </div>
+    <nav class="main-navigation container">
+      <a class="logo logo_inner" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
+      <ul class="site-navigation">
+        <li class="site-navigation__link"><a href="#">Информация</a></li>
+        <li class="site-navigation__link"><a href="#">Новости</a></li>
+        <li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
+        <li class="site-navigation__link site-navigation__link_current"><a href="shop.html">Магазин</a></li>
+        <li class="site-navigation__link"><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <div class="container">
-      <h1>Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="../index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="shop.html">Магазин</a></li>
-        <li class="breadcrumbs__item"><a href="shop.html">Средства для ухода</a></li>
-        <li class="breadcrumbs__item breadcrumbs__item_current">Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</li>
+  <main class="container page page_inner">
+    <h1>Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="../index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="shop.html">Магазин</a></li>
+      <li class="breadcrumbs__item"><a href="shop.html">Средства для ухода</a></li>
+      <li class="breadcrumbs__item breadcrumbs__item_current">Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</li>
+    </ul>
+    <section class="product-images">
+      <h2 class="visually-hidden">Изображения товара</h2>
+      <figure class="product-images__view">
+        <img src="../images/product/product-3.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»">
+      </figure>
+      <ul class="product-images__thumbnails">
+        <li class="product-images__thumbnails-item"><img src="../images/product/product-1-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
+        <li class="product-images__thumbnails-item"><img src="../images/product/product-2-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
+        <li class="product-images__thumbnails-item product-images__thumbnails-item_current"><img src="../images/product/product-3-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
       </ul>
-      <section class="product-images">
-        <h2 class="visually-hidden">Изображения товара</h2>
-        <figure class="product-images__view">
-          <img src="../images/product/product-3.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»">
-        </figure>
-        <ul class="product-images__thumbnails">
-          <li class="product-images__thumbnails-item"><img src="../images/product/product-1-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
-          <li class="product-images__thumbnails-item"><img src="../images/product/product-2-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
-          <li class="product-images__thumbnails-item product-images__thumbnails-item_current"><img src="../images/product/product-3-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
-        </ul>
-      </section>
-      <section class="product-info">
-        <h2 class="visually-hidden">Описание товара</h2>
-        <p class="product-info__status">Есть в&nbsp;наличии</p>
-        <p class="product-info__сode">Артикул: dexter-ae</p>
-        <p class="product-info__description">Travel Kit&nbsp;&mdash; необходимый аксессуар во&nbsp;время любого путесшествия. В&nbsp;аккуратной кожаной сумке находится все, что нужно для бритья и&nbsp;ухода за&nbsp;кожей во&nbsp;время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <p class="product-info__price">
-          <span>2 900 ₽</span>
-          <a class="button button_buy" href="#">Купить</a>
-        </p>
-        <h3>В набор входят:</h3>
-        <ul class="product-info__composition">
-          <li>Средство для умывания (50&nbsp;мл)</li>
-          <li>Увлажняющий крем (50&nbsp;мл)</li>
-          <li>Крем для бритья (50&nbsp;мл)</li>
-          <li>Крем после бритья, шампунь (50&nbsp;мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
-    </div>
+    </section>
+    <section class="product-info">
+      <h2 class="visually-hidden">Описание товара</h2>
+      <p class="product-info__status">Есть в&nbsp;наличии</p>
+      <p class="product-info__сode">Артикул: dexter-ae</p>
+      <p class="product-info__description">Travel Kit&nbsp;&mdash; необходимый аксессуар во&nbsp;время любого путесшествия. В&nbsp;аккуратной кожаной сумке находится все, что нужно для бритья и&nbsp;ухода за&nbsp;кожей во&nbsp;время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+      <p class="product-info__price">
+        <span>2 900 ₽</span>
+        <a class="button button_buy" href="#">Купить</a>
+      </p>
+      <h3>В набор входят:</h3>
+      <ul class="product-info__composition">
+        <li>Средство для умывания (50&nbsp;мл)</li>
+        <li>Увлажняющий крем (50&nbsp;мл)</li>
+        <li>Крем для бритья (50&nbsp;мл)</li>
+        <li>Крем после бритья, шампунь (50&nbsp;мл)</li>
+        <li>Удобная кожаная косметичка</li>
+      </ul>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="container">

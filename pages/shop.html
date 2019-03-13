@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/main.css">
-  <!-- <link rel="stylesheet" href="../styles/shop.css"> -->
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -17,32 +16,28 @@
 </head>
 <body class="inner-page">
   <header class="main-header">
-    <nav class="main-navigation">       
-      <div class="navigation-wrapper">
-        <div class="container">
-          <a class="logo" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
-          <ul class="site-navigation">
-            <li class="site-navigation__link"><a href="#">Информация</a></li>
-            <li class="site-navigation__link"><a href="#">Новости</a></li>
-            <li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
-            <li class="site-navigation__link site-navigation__link_current"><a href="shop.html">Магазин</a></li>
-            <li class="site-navigation__link"><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
-          </ul>
-        </div>
-      </div>
+    <nav class="main-navigation container">       
+      <a class="logo logo_inner" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
+      <ul class="site-navigation">
+        <li class="site-navigation__link"><a href="#">Информация</a></li>
+        <li class="site-navigation__link"><a href="#">Новости</a></li>
+        <li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
+        <li class="site-navigation__link site-navigation__link_current"><a href="shop.html">Магазин</a></li>
+        <li class="site-navigation__link"><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="user-navigation__link user-navigation__link_login"><a href="#">Вход</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <div class="container">
-      <h1>Средства для ухода</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="../index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="shop.html">Магазин</a></li>
-        <li class="breadcrumbs__item breadcrumbs__item_current">Средства для ухода</li>
-      </ul>
+  <main class="container page page_inner">
+    <h1>Средства для ухода</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="../index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="shop.html">Магазин</a></li>
+      <li class="breadcrumbs__item breadcrumbs__item_current">Средства для ухода</li>
+    </ul>
+    <div class="columns-wrapper columns-wrapper_shop">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" name="filters-form" method="post" action="#">
@@ -100,7 +95,7 @@
         <ul class="catalog-list">
           <li class="catalog-list__item">
             <a href="product.html">
-              <h3>Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</h3>
+              <h3 class="catalog-list__item-header">Набор для путешествий <span>&laquo;Baxter of&nbsp;California&raquo;</span></h3>
               <p class="catalog-list__item-image">
                 <img src="../images/shop/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
               </p>
@@ -112,7 +107,7 @@
           </li>
           <li class="catalog-list__item">
             <a href="#">
-              <h3>Увлажняющий кондиционер &laquo;Baxter of&nbsp;California&raquo;</h3>
+              <h3 class="catalog-list__item-header">Увлажняющий кондиционер <span>&laquo;Baxter of&nbsp;California&raquo;</span></h3>
               <p class="catalog-list__item-image">
                 <img src="../images/shop/product-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
               </p>
@@ -124,7 +119,7 @@
           </li>
           <li class="catalog-list__item">
             <a href="#">
-              <h3>Гель для волос &laquo;Suavecito&raquo;</h3>
+              <h3 class="catalog-list__item-header">Гель для волос <span>&laquo;Suavecito&raquo;</span></h3>
               <p class="catalog-list__item-image">
                 <img src="../images/shop/product-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
               </p>
@@ -136,7 +131,7 @@
           </li>
           <li class="catalog-list__item">
             <a href="#">
-              <h3>Глина для укладки волос &laquo;American crew&raquo;</h3>
+              <h3 class="catalog-list__item-header">Глина для укладки волос <span>&laquo;American crew&raquo;</span></h3>
               <p class="catalog-list__item-image">
                 <img src="../images/shop/product-4.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
               </p>
@@ -148,7 +143,7 @@
           </li>
           <li class="catalog-list__item">
             <a href="#">
-              <h3>Гель для волос &laquo;American crew&raquo;</h3>
+              <h3 class="catalog-list__item-header">Гель для волос <span>&laquo;American crew&raquo;</span></h3>
               <p class="catalog-list__item-image">
                 <img src="../images/shop/product-5.jpg" width="220" height="165" alt="Гель для волос «American crew»">
               </p>
@@ -160,7 +155,7 @@
           </li>
           <li class="catalog-list__item">
             <a href="#">
-              <h3>Набор для бритья &laquo;Baxter of&nbsp;California&raquo;</h3>
+              <h3 class="catalog-list__item-header">Набор для бритья <span>&laquo;Baxter of&nbsp;California&raquo;</span></h3>
               <p class="catalog-list__item-image">
                 <img src="../images/shop/product-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
               </p>
@@ -171,13 +166,13 @@
             </p>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-list__item"><a class="button button_pagination" href="#">1</a></li>
+          <li class="pagination-list__item pagination-list__item_current"><a class="button button_pagination">2</a></li>
+          <li class="pagination-list__item"><a class="button button_pagination" href="#">3</a></li>
+          <li class="pagination-list__item"><a class="button button_pagination" href="#">4</a></li>
+        </ul>
       </section>
-      <ul class="pagination-list">
-        <li class="pagination-list__item"><a class="button button_pagination" href="#">1</a></li>
-        <li class="pagination-list__item pagination-list__item_current"><a class="button button_pagination">2</a></li>
-        <li class="pagination-list__item"><a class="button button_pagination" href="#">3</a></li>
-        <li class="pagination-list__item"><a class="button button_pagination" href="#">4</a></li>
-      </ul>
     </div>
   </main>
   <footer class="main-footer">
