@@ -113,14 +113,28 @@ button {
 }
 
 .button {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  padding: 10px 20px;
+
   font: inherit;
-  text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
 
   background-color: #000000;
   border: none;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #673d15;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -319,11 +333,11 @@ input[type="submit"] {
 }
 
 .site-navigation__link:hover,
-.site-navigation__link:focus,
 .site-navigation__link:active,
-.user-navigation__link:hover, 
-.user-navigation__link:focus,
-.user-navigation__link:active {
+.site-navigation__link:focus,
+.user-navigation__link:hover,
+.user-navigation__link:active, 
+.user-navigation__link:focus {
   background-color: #242424;
 }
 
@@ -632,6 +646,8 @@ input[type="submit"] {
 }
 
 .inner-page .main-footer {
+  padding-top: 57px;
+  
   background-image: url("../images/backgrounds/footer-inner-bg.jpg"), url("../images/backgrounds/dark-bg.jpg");
   background-repeat: repeat-x, repeat;
   background-position: left top, left top;
@@ -643,6 +659,11 @@ input[type="submit"] {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+}
+
+.main-footer p {
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .main-footer a {
@@ -657,15 +678,62 @@ input[type="submit"] {
 .footer-socials,
 .footer-copyrights {
   width: 140px;
+
+  text-align: center;
 }
 
 .socials-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
 
+.button_social {
+  position: relative;
+
+  width: 43px;
+  height: 43px;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.button_social:hover,
+.button_social:active,
+.button_social:focus {
+  background-color: #ffffff;
+}
+
+/*.button_social_vk {
+  background-image: url("../images/icons/vk.svg");
+}*/
+
+.button_social:hover path,
+.button_social:active path,
+.button_social:focus path {
+  fill: #000000;
+}
+
 .footer-copyrights {
   margin-left: auto;
+}
+
+.button_copyrights:hover,
+.button_copyrights:active,
+.button_copyrights:focus {
+  color: #000000;
+
+  background-color: #ffffff;
 }
