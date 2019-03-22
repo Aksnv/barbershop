@@ -436,7 +436,7 @@ input[type="submit"] {
   margin-right: 0;
 }
 
-/* Main content - Index */
+/* ------------- Main content - Index ------------- */
 
 .columns-wrapper_index {
   position: relative;
@@ -444,7 +444,7 @@ input[type="submit"] {
   margin-bottom: 35px;
   padding: 47px 81px;
   padding-bottom: 50px;
-  padding-right: 78px;
+  padding-right: 79px;
 
   color: #000000;
 
@@ -475,6 +475,8 @@ input[type="submit"] {
 .column_right {
   width: 300px;
 }
+
+/* ------------- Main content - Index - Features ------------- */
 
 .features {
   margin-bottom: 77px;
@@ -531,6 +533,8 @@ input[type="submit"] {
   line-height: 42px;
 }
 
+/* ------------- Main content - Index - News ------------- */
+
 .news p {
   margin: 0;
 }
@@ -549,6 +553,38 @@ input[type="submit"] {
 
 .news-list__item time {
   text-transform: none;
+}
+
+/* ------------- Main content - Index - Gallery ------------- */
+
+.gallery p {
+  margin: 0;
+}
+
+.gallery-image {
+  margin: 0;
+  margin-bottom: 38px;
+
+  border: 7px solid #ffffff;
+}
+
+.gallery-image img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery-image a,
+.gallery-image img {
+  display: block;
+}
+
+.gallery-controls {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Main content - Shop */
