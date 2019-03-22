@@ -131,10 +131,16 @@ button {
   border: none;
 }
 
+.button_wide {
+  width: 300px;
+}
+
 .button:hover,
 .button:active,
 .button:focus {
   background-color: #673d15;
+
+  outline: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -339,6 +345,8 @@ input[type="submit"] {
 .user-navigation__link:active, 
 .user-navigation__link:focus {
   background-color: #242424;
+
+  outline: none;
 }
 
 .site-navigation__link_current::after {
@@ -382,7 +390,7 @@ input[type="submit"] {
 /* ------------- Main content ------------- */
 
 .page_index {
-  margin-bottom: 65px;
+  margin-bottom: 63px;
 }
 
 .page_index h2 {
@@ -442,9 +450,10 @@ input[type="submit"] {
   position: relative;
 
   margin-bottom: 35px;
-  padding: 47px 81px;
-  padding-bottom: 50px;
+  padding-left: 81px;
+  padding-top: 47px;
   padding-right: 79px;
+  padding-bottom: 50px;
 
   color: #000000;
 
@@ -585,6 +594,87 @@ input[type="submit"] {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+}
+
+/* ------------- Main content - Index - Contacts ------------- */
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts-buttons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.button_contacts {
+  margin-right: 20px;
+}
+
+/* ------------- Main content - Index - Appointment ------------- */
+
+.appointment p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.appointment-form__fieldset {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+
+  border: none;
+}
+
+.appointment-form__item {
+  width: 140px;
+}
+
+.appointment-form label {
+  display: block;
+  margin-bottom: 6px;
+  padding-left: 17px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="tel"] {
+  width: 140px;
+  padding: 8px 14px;
+
+  font: inherit;
+  text-transform: uppercase;
+  color: #000000;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.appointment-form input[type="text"]:focus,
+.appointment-form input[type="tel"]:focus {
+  border: 2px solid #673d15;
+  outline: none;
+}
+
+.appointment-form input[type="text"]::-webkit-input-placeholder,
+.appointment-form input[type="tel"]::-webkit-input-placeholder,
+.appointment-form input[type="text"]::-ms-input-placeholder,
+.appointment-form input[type="tel"]::-ms-input-placeholder, {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* Main content - Shop */

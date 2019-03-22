@@ -101,7 +101,7 @@
             ПН&nbsp;&mdash; ПТ: с&nbsp;10:00 до&nbsp;22:00<br>
             СБ&nbsp;&mdash; ВС: с&nbsp;10:00 до&nbsp;19:00
           </p>
-          <p>
+          <p class="contacts-buttons">
             <a class="button button_contacts" href="#">Как проехать</a>
             <a class="button button_feedback" href="#">Обратная связь</a>
           </p>
@@ -112,25 +112,25 @@
           <h2>Записаться</h2>
           <p>Укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения брони</p>
           <form class="appointment-form" name="appointment-form" method="post" action="#">
-            <p class="appointment-form__item">
-              <label for="appointment-form__field_date">Дата</label>
-              <input class="appointment-form__field" id="appointment-form__field_date" type="text" name="appointment-form__field_date" placeholder="08.01.2019">
-            </p>
-            <p class="appointment-form__item">
-              <label for="appointment-form__field_time">Время</label>
-              <input class="appointment-form__field" id="appointment-form__field_time" type="text" name="appointment-form__field_time" placeholder="10:00">
-            </p>
-            <p class="appointment-form__item">
-              <label for="appointment-form__field_name">Ваше имя</label>
-              <input class="appointment-form__field" id="appointment-form__field_name" type="text" name="appointment-form__field_name" placeholder="Борода">
-            </p>
-            <p class="appointment-form__item">
-              <label for="appointment-form__field_phone">Телефон</label>
-              <input class="appointment-form__field" id="appointment-form__field_phone" type="tel" name="appointment-form__field_phone" placeholder="+7 123 456-78-90">
-            </p>
-            <p>
-              <button class="button button_wide appointment-form__button appointment-form__button_submit" type="submit" name="appointment-form__button_submit">Отправить</button>
-            </p>
+            <div class="appointment-form__fieldset" role="group">
+              <p class="appointment-form__item">
+                <label for="appointment-form__field_date">Дата</label>
+                <input class="appointment-form__field" id="appointment-form__field_date" type="text" name="appointment-form__field_date" placeholder="08.01.2019">
+              </p>
+              <p class="appointment-form__item">
+                <label for="appointment-form__field_time">Время</label>
+                <input class="appointment-form__field" id="appointment-form__field_time" type="text" name="appointment-form__field_time" placeholder="10:00">
+              </p>
+              <p class="appointment-form__item">
+                <label for="appointment-form__field_name">Ваше имя</label>
+                <input class="appointment-form__field" id="appointment-form__field_name" type="text" name="appointment-form__field_name" placeholder="Борода">
+              </p>
+              <p class="appointment-form__item">
+                <label for="appointment-form__field_phone">Телефон</label>
+                <input class="appointment-form__field" id="appointment-form__field_phone" type="tel" name="appointment-form__field_phone" placeholder="+7 123 456-78-90">
+              </p>
+            </div>
+            <button class="button button_wide appointment-form__button appointment-form__button_submit" type="submit" name="appointment-form__button_submit">Отправить</button>
           </form>
         </section>
       </div>
