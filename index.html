@@ -175,20 +175,24 @@
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и&nbsp;пароль</p>
     <form class="login-form" name="login-form" method="post" action="#">
-      <p>
-        <label for="login-form__field_login"></label>
-        <input class="login-form__field" id="login-form__field_login" type="text" name="login-form__field_login" placeholder="Логин">
-      </p>
-      <p>
-        <label for="login-form__field_password"></label>
-        <input class="login-form__field" id="login-form__field_password" type="password" name="login-form__field_password" placeholder="Пароль">
-      </p>
-      <p>
-        <input class="checkbox" id="checkbox_remember" type="checkbox" name="checkbox_remember" checked>
-        <label for="checkbox_remember">Запомните меня</label>
+      <div class="login-form__fieldset" role="group">
+        <p>
+          <label class="visually-hidden" for="login-form__field_login">Логин</label>
+          <input class="login-form__field login-form__field_login" id="login-form__field_login" type="text" name="login-form__field_login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="login-form__field_password">Пароль</label>
+          <input class="login-form__field login-form__field_password" id="login-form__field_password" type="password" name="login-form__field_password" placeholder="Пароль">
+        </p>
+      </div>
+      <div class="login-form__fieldset" role="group">
+        <p>
+          <input class="checkbox visually-hidden" id="checkbox_remember" type="checkbox" name="checkbox_remember" checked>
+          <label for="checkbox_remember">Запомните меня</label>
+        </p>
         <a class="inline-link" href="#">Я забыл пароль!</a>
-      </p>
-      <p><button class="button button_wide login-form__button login-form__button_submit" type="submit" name="login-form__button_submit">Войти</button></p>
+      </div>
+      <button class="button button_wide login-form__button login-form__button_submit" type="submit" name="login-form__button_submit">Войти</button>
     </form>
     <button class="popup__close-button" type="button">Закрыть</button>
   </section>
@@ -199,5 +203,6 @@
     </figure>
     <button class="popup__close-button" type="button">Закрыть</button>
   </section>
+  <div class="overlay"></div>
 </body>
 </html>

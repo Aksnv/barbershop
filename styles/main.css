@@ -139,7 +139,6 @@ button {
 .button:active,
 .button:focus {
   background-color: #673d15;
-
   outline: none;
 }
 
@@ -677,7 +676,7 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* Main content - Shop */
+/* ------------- Main content - Shop ------------- */
 
 .filters {
   width: 220px;
@@ -746,7 +745,7 @@ input[type="submit"] {
   display: block;
 }
 
-/* Main content - Product */
+/* ------------- Main content - Product ------------- */
 
 .product-images {
   width: 460px;
@@ -805,7 +804,7 @@ input[type="submit"] {
   text-align: right;
 }
 
-/* Main content - Price */
+/* ------------- Main content - Price ------------- */
 
 .price-brands {
   width: 380px;
@@ -936,3 +935,244 @@ input[type="submit"] {
 
   background-color: #ffffff;
 }
+
+/* ------------- Popup ------------- */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  display: none;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay_visible {
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+
+  display: none;
+
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+
+  transform: translate(-50%, -50%);
+}
+
+.popup_visible {
+  display: block;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: 8px;
+  right: -35px;
+
+  display: block;
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  
+  background-color: transparent;
+  border: none;
+}
+
+.popup__close-button::before,
+.popup__close-button::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  display: block;
+  width: 23px;
+  height: 5px;
+
+  background-color: #d0d0d0;
+}
+
+.popup__close-button::before {
+  transform: rotate(45deg);
+}
+
+.popup__close-button::after {
+  transform: rotate(-45deg);
+}
+
+/* ------------- Popup - Login ------------- */
+
+.popup_login {
+  /*top: 120px;*/
+  
+  width: 460px;
+  padding: 47px 80px;
+  padding-bottom: 58px;
+
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../images/backgrounds/light-bg.jpg");
+  background-repeat: repeat;
+  background-position: left top;
+}
+
+.popup_login h2 {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.popup_login p {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.popup_login a {
+  color: #000000;
+}
+
+.login-form__fieldset {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 300px;
+  padding: 8px 14px;
+  padding-right: 40px;
+
+  font: inherit;
+  text-transform: uppercase;
+  color: #000000;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border: 2px solid #673d15;
+  outline: none;
+}
+
+.login-form input[type="text"]::-webkit-input-placeholder,
+.login-form input[type="password"]::-webkit-input-placeholder,
+.login-form input[type="text"]::-ms-input-placeholder,
+.login-form input[type="password"]::-ms-input-placeholder, {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.login-form__field_login {
+  background-image: url("../images/icons/user.svg");
+  background-repeat: no-repeat;
+  background-position: 269px 13px;
+}
+
+.login-form__field_password {
+  background-image: url("../images/icons/lock.svg");
+  background-repeat: no-repeat;
+  background-position: 267px 12px;
+}
+
+.login-form input[type="checkbox"] {
+  
+}
+
+.login-form input[type="checkbox"] + label {
+  position: relative;
+
+  padding-left: 32px;
+
+  cursor: pointer;
+}
+
+.login-form input[type="checkbox"] + label:hover,
+.login-form input[type="checkbox"]:focus + label {
+  color: #673d15;
+}
+
+.login-form input[type="checkbox"] + label:before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input[type="checkbox"] + label:after {
+  display: none;
+}
+
+.login-form input[type="checkbox"]:checked + label:after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 4px;
+
+  display: block;
+  width: 12px;
+  height: 12px;
+  
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+}
+
+.login-form input[type="checkbox"]:disabled + label,
+.login-form input[type="checkbox"]:disabled + label:hover {
+  color: #000000;
+
+  opacity: 0.5;
+
+  cursor: default;
+}
+
+/* ------------- Popup - Map ------------- */
+
+.popup_map {
+  /*top: 578px;*/
+
+  width: 780px;
+}
+
+.popup_map figure {
+  margin: 0;
+
+  border: 7px solid #ffffff;
+}
+
+.popup_map img {
+  display: block;
+}
+
