@@ -1,4 +1,4 @@
-# barbershop
-Barbershop Borodinski (HTML Academy)
-- fixed layout
-- HTML5, CSS3, JS, SVG, flexbox
+#barbershop
+- Название сайта: Барбершоп «Бородинский»
+- Стандарты вёрстки: фиксированный макет, HTML5, CSS3 (в т.ч. кастомные элементы форм, анимации), JavaScript (в т.ч. модальные окна, валидация формы на стороне клиента, localStorage), SVG, Flexbox (сетки), прогрессивное улучшение (в т.ч. интерактивная карта, форма входа в личный кабинет)
+- Кроссбраузерность: IE11+, Chrome, Firefox, Opera, Safari

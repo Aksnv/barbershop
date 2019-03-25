@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп «Бородинский»</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
@@ -25,10 +25,10 @@
             <li><a class="site-navigation__link" href="#">Новости</a></li>
             <li><a class="site-navigation__link" href="pages/price.html">Прайс-лист</a></li>
             <li><a class="site-navigation__link" href="pages/shop.html">Магазин</a></li>
-            <li><a class="site-navigation__link" href="#">Контакты</a></li>
+            <li><a class="site-navigation__link" href="pages/contacts.html">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
-            <li><a class="user-navigation__link user-navigation__link_login" href="#">Вход</a></li>
+            <li><a class="user-navigation__link user-navigation__link_login" href="pages/login.html">Вход</a></li>
           </ul>
         </div>
       </div>
@@ -60,12 +60,14 @@
           <ul class="news-list">
             <li class="news-list__item">
               <article>
+                <h3 class="visually-hidden">Нам наконец-то завезли ягермайстер!</h3>
                 <p>Нам наконец-то завезли ягермайстер! Теперь вы&nbsp;можете пропустить стаканчик во&nbsp;время стрижки</p>
                 <p><time datetime="2019-01-11">11 января</time></p>
               </article>
             </li>
             <li class="news-list__item">
               <article>
+                <h3 class="visually-hidden">Пополнение в нашей команде</h3>
                 <p>В&nbsp;нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и&nbsp;наград пополнил наши стройные ряды</p>
                 <p><time datetime="2019-01-18">18 января</time></p>
               </article>
@@ -102,7 +104,7 @@
             СБ&nbsp;&mdash; ВС: с&nbsp;10:00 до&nbsp;19:00
           </p>
           <p class="contacts-buttons">
-            <a class="button button_contacts" href="#">Как проехать</a>
+            <a class="button button_contacts" href="pages/contacts.html">Как проехать</a>
             <a class="button button_feedback" href="#">Обратная связь</a>
           </p>
         </section>
@@ -142,7 +144,7 @@
         <p>
           Барбершоп &laquo;Бородинский&raquo;<br>
           Адрес: г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br>
-          <a class="inline-link" href="#">Как нас найти?</a><br>
+          <a class="inline-link" href="pages/contacts.html">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </p>
       </div>
@@ -192,15 +194,18 @@
       </div>
       <button class="button button_wide login-form__button login-form__button_submit" type="submit" name="login-form__button_submit">Войти</button>
     </form>
-    <button class="popup__close-button" type="button">Закрыть</button>
+    <button class="popup__close-button popup__close-button_login" type="button">Закрыть</button>
   </section>
   <section class="popup popup_map">
     <h2 class="visually-hidden">Схема проезда</h2>
     <figure>
       <img src="images/contacts-map.jpg" width="766" height="560" alt="Адрес барбершопа: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCqgYD6F" width="766" height="560"></iframe>
     </figure>
-    <button class="popup__close-button" type="button">Закрыть</button>
+    <button class="popup__close-button popup__close-button_map" type="button">Закрыть</button>
   </section>
   <div class="overlay"></div>
+  <script src="scripts/login.js"></script>
+  <script src="scripts/map.js"></script>
 </body>
 </html>
