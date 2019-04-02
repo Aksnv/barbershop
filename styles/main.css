@@ -271,6 +271,7 @@ legend.visually-hidden {
   display: -o-flex;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .main-navigation_inner {
@@ -304,6 +305,7 @@ legend.visually-hidden {
 }
 
 .navigation-wrapper {
+  width: 100%;
   margin-bottom: 60px;
 
   color: #ffffff;
@@ -1252,11 +1254,11 @@ legend.visually-hidden {
 }
 
 .inner-content .inner-content__header_big::before {
-  margin-right: 26px;
+  margin-right: 20px;
 }
 
 .inner-content .inner-content__header_big::after {
-  margin-left: 26px;
+  margin-left: 20px;
 }
 
 .inner-content .inner-content__table_wide {
