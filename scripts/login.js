@@ -1,15 +1,14 @@
-var popupLogin = document.querySelector(".popup_login");
+/* ------------- Popup - Login ------------- */
+
 var overlay = document.querySelector(".overlay");
+
+var popupLogin = document.querySelector(".popup_login");
 var buttonOpenPopupLogin = document.querySelector(".user-navigation__link_login");
-var buttonClosePopupLogin = popupLogin.querySelector(".popup__close-button_login");
+var buttonClosePopupLogin = popupLogin.querySelector(".popup__close-button");
 
 var formLogin = popupLogin.querySelector(".login-form");
 var fieldLogin = popupLogin.querySelector(".login-form__field_login");
 var fieldPassword = popupLogin.querySelector(".login-form__field_password");
-
-var popupShakeReload = function() {
-	popupLogin.classList.remove("popup_invalid");
-};
 
 var isStorageSupport = true;
 var storage = "";
@@ -44,25 +43,31 @@ buttonClosePopupLogin.addEventListener("click", function(e) {
 
 window.addEventListener("keydown", function(e) {
 	if (e.keyCode === 27) {
-		e.preventDefault();
-		overlay.classList.remove("overlay_visible");
-		popupLogin.classList.remove("popup_visible");
-		popupLogin.classList.remove("popup_invalid");
+		if (popupLogin.classList.contains("popup_visible")) {
+			e.preventDefault();
+			overlay.classList.remove("overlay_visible");
+			popupLogin.classList.remove("popup_visible");
+			popupLogin.classList.remove("popup_invalid");
+			fieldLogin.classList.remove("login-form__field_invalid");
+		  fieldPassword.classList.remove("login-form__field_invalid");
+		}
 	}
 });
 
 formLogin.addEventListener("submit", function(e) {
 	if (!fieldLogin.value) {
 		e.preventDefault();
+		popupLogin.classList.remove("popup_invalid");
+		popupLogin.offsetWidth = popupLogin.offsetWidth;
 		fieldLogin.classList.add("login-form__field_invalid");
 		popupLogin.classList.add("popup_invalid");
-		setTimeout(popupShakeReload, 1000);
 	}
 	if (!fieldPassword.value) {
 		e.preventDefault();
+		popupLogin.classList.remove("popup_invalid");
+		popupLogin.offsetWidth = popupLogin.offsetWidth;
 		fieldPassword.classList.add("login-form__field_invalid");
 		popupLogin.classList.add("popup_invalid");
-		setTimeout(popupShakeReload, 1000);
 	}
 	if (isStorageSupport) {
 		localStorage.setItem("login", fieldLogin.value);
@@ -74,6 +79,9 @@ fieldLogin.addEventListener("blur", function() {
 		fieldLogin.classList.remove("login-form__field_invalid");
 	} else {
 		fieldLogin.classList.add("login-form__field_invalid");
+		if (!fieldPassword.value) {
+			fieldPassword.classList.add("login-form__field_invalid");
+		}
 	}
 });
 

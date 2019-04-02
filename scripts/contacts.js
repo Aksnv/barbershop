@@ -1,7 +1,9 @@
-var contactsContainer = document.querySelector(".content-page__section");
-var contactsMapImage = document.querySelector(".content-page__section img");
+/* ------------- Main content - Contacts ------------- */
 
-window.onload = function () {
-	contactsContainer.classList.add("content-page__section_contacts");
+var contactsMapIframe = document.querySelector(".inner-content__iframe_map");
+var contactsMapImage = document.querySelector(".inner-content__image_map");
+
+window.onload = function() {
+	contactsMapIframe.classList.add("inner-content__iframe_map_visible");
 	contactsMapImage.classList.add("visually-hidden");
 };
