@@ -1,3 +1,5 @@
+"use strict";
+
 /* ------------- Disabled buttons attribute ------------- */
 
 var disabledButtons = document.querySelectorAll(".button_disabled");

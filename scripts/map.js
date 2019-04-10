@@ -1,3 +1,5 @@
+"use strict";
+
 /* ------------- Popup - Map ------------- */
 
 var popupMap = document.querySelector(".popup_map");
@@ -27,6 +29,6 @@ window.addEventListener("keydown", function(e) {
 			overlay.classList.remove("overlay_visible");
 			popupMap.classList.remove("popup_visible");
 			mapImage.classList.remove("visually-hidden");
-		}	
+		}
 	}
 });

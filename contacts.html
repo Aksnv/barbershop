@@ -3,71 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Контакты - Барбершоп «Бородинский»</title><meta name="description" content="Барбершоп «Бородинский» — стильные мужские стрижки и бритье">
+  <title>Контакты - Барбершоп «Бородинский»</title>
+  <meta name="description" content="Барбершоп «Бородинский» — стильные мужские стрижки и бритье">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/normalize.min.css">
-  <link rel="stylesheet" href="../styles/main.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#000000">
+  <link rel="stylesheet" href="styles/normalize.min.css">
+  <link rel="stylesheet" href="styles/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
 <body class="page page_inner">
   <header class="main-header main-header_inner">
     <nav class="main-navigation main-navigation_inner container">
-      <a class="logo logo_inner" href="../index.html"><img src="../images/logo/logo.svg" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+      <a class="logo logo_inner" href="index.html"><img src="images/logo/logo.svg" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
       <ul class="site-navigation">
         <li><a class="site-navigation__link" href="#">Информация</a></li>
         <li><a class="site-navigation__link" href="#">Новости</a></li>
         <li><a class="site-navigation__link" href="price.html">Прайс-лист</a></li>
         <li><a class="site-navigation__link" href="shop.html">Магазин</a></li>
-        <li><a class="site-navigation__link" href="contacts.html">Контакты</a></li>
+        <li><a class="site-navigation__link site-navigation__link_current">Контакты</a></li>
       </ul>
       <ul class="user-navigation user-navigation_inner">
-        <li><a class="user-navigation__link user-navigation__link_login">Вход</a></li>
+        <li><a class="user-navigation__link user-navigation__link_login" href="login.html">Вход</a></li>
       </ul>
     </nav>
   </header>
-  <main class="main-content main-content_inner main-content_content container">
-    <h1>Личный кабинет</h1>
+  <main class="main-content main-content_inner container">
+    <h1>Контакты</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="../index.html">Главная</a>
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs__item breadcrumbs__item_current">
-        Личный кабинет
+        Контакты
       </li>
     </ul>
     <div class="inner-content">
-      <h2>Вход в личный кабинет</h2>
-      <p class="popup__text">Введите пожалуйста свой логин и&nbsp;пароль</p>
-      <form class="login-form inner-content__form_login" name="login-form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="login-form__fieldset">
-          <legend class="visually-hidden">Логин и пароль</legend>
-          <ul class="login-form__list">
-            <li class="login-form__item">
-              <label class="login-form__label visually-hidden" for="login-form__field_login">Логин</label>
-              <input class="login-form__field login-form__field_login" id="login-form__field_login" type="text" name="login-form__field_login" placeholder="Логин">
-            </li>
-            <li class="login-form__item">
-              <label class="login-form__label visually-hidden" for="login-form__field_password">Пароль</label>
-              <input class="login-form__field login-form__field_password" id="login-form__field_password" type="password" name="login-form__field_password" placeholder="Пароль">
-            </li>
-          </ul>
-        </fieldset>
-        <p class="login-form__help">
-          <input class="login-form__field login-form__field_checkbox visually-hidden" id="remember" type="checkbox" name="remember" checked>
-          <label class="login-form__label" for="remember">
-            <span class="indicator indicator_checkbox login-form__indicator"></span>
-            Запомните меня
-          </label>
-          <a class="popup__link inline-link" href="#">Я забыл пароль!</a>
-        </p>
-        <button class="button button_wide login-form__button login-form__button_submit" type="submit" name="login-form__button_submit">Войти</button>
-      </form>
+      <h2>Схема проезда</h2>
+      <img class="inner-content__image_map" src="images/contacts-map.jpg" width="766" height="560" alt="Адрес барбершопа: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <iframe class="inner-content__iframe_map" src="https://yandex.ru/map-widget/v1/-/CCqgYD6F" width="766" height="560"></iframe>
+      <p>
+        Время работы:<br>
+        ПН&nbsp;&mdash; ПТ: с&nbsp;10:00 до&nbsp;22:00<br>
+        СБ&nbsp;&mdash; ВС: с&nbsp;10:00 до&nbsp;19:00
+      </p>
     </div>
   </main>
   <footer class="main-footer main-footer_inner">
@@ -76,7 +59,7 @@
         <p class="footer-contacts__text">
           Барбершоп &laquo;Бородинский&raquo;<br>
           Адрес: г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br>
-          <a class="footer-contacts__link inline-link" href="pages/contacts.html">Как нас найти?</a><br>
+          <a class="footer-contacts__link inline-link">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </p>
       </div>
@@ -108,6 +91,38 @@
       </div>
     </div>
   </footer>
-  <script src="../scripts/main.min.js"></script>
+  <section class="popup popup_login">
+    <h2>Личный кабинет</h2>
+    <p class="popup__text">Введите пожалуйста свой логин и&nbsp;пароль</p>
+    <form class="login-form" name="login-form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="login-form__fieldset">
+        <legend class="visually-hidden">Логин и пароль</legend>
+        <ul class="login-form__list">
+          <li class="login-form__item">
+            <label class="login-form__label visually-hidden" for="login-form__field_login">Логин</label>
+            <input class="login-form__field login-form__field_login" id="login-form__field_login" type="text" name="login-form__field_login" placeholder="Логин">
+          </li>
+          <li class="login-form__item">
+            <label class="login-form__label visually-hidden" for="login-form__field_password">Пароль</label>
+            <input class="login-form__field login-form__field_password" id="login-form__field_password" type="password" name="login-form__field_password" placeholder="Пароль">
+          </li>
+        </ul>
+      </fieldset>
+      <p class="login-form__help">
+        <input class="login-form__field login-form__field_checkbox visually-hidden" id="remember" type="checkbox" name="remember" checked>
+        <label class="login-form__label" for="remember">
+          <span class="indicator indicator_checkbox login-form__indicator"></span>
+          Запомните меня
+        </label>
+        <a class="popup__link inline-link" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button button_wide login-form__button login-form__button_submit" type="submit" name="login-form__button_submit">Войти</button>
+    </form>
+    <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <div class="overlay"></div>
+  <script src="scripts/main.min.js"></script>
+  <script src="scripts/login.min.js"></script>
+  <script src="scripts/contacts.min.js"></script>
 </body>
 </html>

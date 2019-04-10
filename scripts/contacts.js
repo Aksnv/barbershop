@@ -1,3 +1,5 @@
+"use strict";
+
 /* ------------- Main content - Contacts ------------- */
 
 var contactsMapIframe = document.querySelector(".inner-content__iframe_map");

@@ -1,3 +1,5 @@
+"use strict";
+
 /* ------------- Popup - Login ------------- */
 
 var overlay = document.querySelector(".overlay");
@@ -58,14 +60,14 @@ formLogin.addEventListener("submit", function(e) {
 	if (!fieldLogin.value) {
 		e.preventDefault();
 		popupLogin.classList.remove("popup_invalid");
-		popupLogin.offsetWidth = popupLogin.offsetWidth;
+		popupLogin.offsetWidth;
 		fieldLogin.classList.add("login-form__field_invalid");
 		popupLogin.classList.add("popup_invalid");
 	}
 	if (!fieldPassword.value) {
 		e.preventDefault();
 		popupLogin.classList.remove("popup_invalid");
-		popupLogin.offsetWidth = popupLogin.offsetWidth;
+		popupLogin.offsetWidth;
 		fieldPassword.classList.add("login-form__field_invalid");
 		popupLogin.classList.add("popup_invalid");
 	}

@@ -76,7 +76,7 @@ html {
 
 .container {
   position: relative;
-  
+
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
@@ -177,7 +177,7 @@ button, label {
   display: block;
   width: 20px;
   height: 20px;
-  
+
   background-color: #f9f6f3;
   border: 2px solid #000000;
 }
@@ -201,7 +201,7 @@ input[type="checkbox"]:checked + label .indicator_checkbox::after {
   display: block;
   width: 14px;
   height: 3px;
-  
+
   background-color: #000000;
 }
 
@@ -227,7 +227,7 @@ input[type="radio"]:checked + label .indicator_radio::before {
   display: block;
   width: 8px;
   height: 8px;
-  
+
   background-color: #000000;
   border-radius: 50%;
 }
@@ -401,7 +401,7 @@ legend.visually-hidden {
 .site-navigation__link:active,
 .site-navigation__link:focus,
 .user-navigation__link:hover,
-.user-navigation__link:active, 
+.user-navigation__link:active,
 .user-navigation__link:focus {
   background-color: #242424;
 }
@@ -643,7 +643,7 @@ legend.visually-hidden {
 
 .features-list__header {
   position: relative;
-  
+
   display: block;
   margin-bottom: 58px;
 
@@ -805,7 +805,7 @@ legend.visually-hidden {
   font: inherit;
   text-transform: uppercase;
   color: #000000;
-  
+
   background-color: #f9f6f3;
   border: 2px solid #000000;
 }
@@ -960,7 +960,7 @@ legend.visually-hidden {
   order: 1;
   margin: 0;
   padding-left: 16px;
-  
+
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -1053,7 +1053,7 @@ legend.visually-hidden {
   height: 498px;
   margin: 0;
   margin-bottom: 20px;
-  
+
   background-color: #f8f8f8;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -1082,7 +1082,7 @@ legend.visually-hidden {
 
 .product-thumbnails__item {
   margin-right: 20px;
-  
+
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -1281,7 +1281,7 @@ legend.visually-hidden {
   padding: 8px 18px;
 
   color: #000000;
-  
+
   background-color: #f9f6f3;
   border: 2px solid #000000;
 }
@@ -1325,7 +1325,7 @@ legend.visually-hidden {
 .inner-content .inner-content__header_big::before,
 .inner-content .inner-content__header_big::after {
   content: "";
-  
+
   display: block;
   width: 160px;
   height: 2px;
@@ -1579,7 +1579,7 @@ legend.visually-hidden {
   display: none;
 
   color: #000000;
-  
+
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
 
@@ -1625,7 +1625,7 @@ legend.visually-hidden {
   display: block;
   width: 21px;
   height: 21px;
-  
+
   background-color: transparent;
   border: none;
 }
@@ -1698,7 +1698,7 @@ legend.visually-hidden {
   font: inherit;
   text-transform: uppercase;
   color: #000000;
-  
+
   background-color: #f9f6f3;
   border: 2px solid #000000;
 }
@@ -1715,7 +1715,7 @@ legend.visually-hidden {
 .login-form__field_login {
   background-image: url("../images/icons/user.svg");
   background-position: 269px center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .login-form__field_password {
@@ -1744,7 +1744,7 @@ legend.visually-hidden {
 
 .login-form__label {
   position: relative;
-  
+
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
